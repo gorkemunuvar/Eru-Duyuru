@@ -1,8 +1,4 @@
-import 'package:anons/html_parser.dart';
-import 'screens/contact_page.dart';
-import 'package:flutter/material.dart';
-import 'screens/announcements_page.dart';
-import 'screens/settings_screen.dart';
+import 'index.dart';
 
 void main() => runApp(MyApp());
 

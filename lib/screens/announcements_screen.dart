@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:anons/html_parser.dart';
+import 'package:anons/services/html_parser.dart';
 import '../components/custom_list_tile.dart';
-import 'package:anons/announcement.dart';
+import 'package:anons/models/announcement.dart';
 
 class AnnouncementsWidget extends StatelessWidget {
   List<Announcement> _announcements;

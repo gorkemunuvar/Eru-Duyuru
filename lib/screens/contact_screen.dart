@@ -1,4 +1,4 @@
-import '../people.dart';
+import '../models/people.dart';
 import '../components/custom_list_tile.dart';
 import 'package:flutter/material.dart';
 
