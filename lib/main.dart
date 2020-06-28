@@ -2,7 +2,6 @@ import 'index.dart';
 
 void main() => runApp(MyApp());
 
-/// This Widget is the main application widget.
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -24,9 +23,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     FutureBuilder(
       future: initiate(),
       builder: (context, snapshot) {
-        if (snapshot.hasData)
-          return AnnouncementsWidget();
-        else if (snapshot.hasError) return Text("${snapshot.error}");
+        if (snapshot.hasData) {
+          return AnnouncementsScreen(
+            announcements: HtmlParsing.getAnnouncements(),
+          );
+        } else if (snapshot.hasError) return Text("${snapshot.error}");
 
         return Center(
           child: CircularProgressIndicator(),
@@ -46,14 +47,18 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        //Settings
         actions: <Widget>[
           Padding(
               padding: EdgeInsets.only(right: 20.0),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return SetttingsScreen();
-                  }));
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) {
+                      return SetttingsScreen();
+                    }),
+                  );
                 },
                 child: Icon(
                   Icons.settings,

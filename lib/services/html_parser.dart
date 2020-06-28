@@ -3,10 +3,9 @@ import 'package:html/parser.dart'; // Contains HTML parsers to generate a Docume
 import 'package:html/dom.dart'; // Contains DOM related classes for extracting data from elements
 import '../models/announcement.dart';
 
-List<Announcement> _announcementList = List();
+List<Announcement> announcementList = List();
 
 Future initiate() async {
-  // Make API call to Hackernews homepage
   var client = Client();
   Response response = await client.get('https://bm.erciyes.edu.tr/?Anasayfa');
 
@@ -19,13 +18,14 @@ Future initiate() async {
 
     String pageLink = 'https://bm.erciyes.edu.tr/index.asp';
 
+    announcementList.clear();
     for (var announcement in announcements) {
       String link = pageLink + announcement.attributes['href'];
 
       print(announcement.text);
       print(link);
 
-      _announcementList.add(Announcement(
+      announcementList.add(Announcement(
         title: announcement.text,
         link: link,
       ));
@@ -35,10 +35,11 @@ Future initiate() async {
   }
 
   //return json.encode(linkMap);
-  return _announcementList;
+  return announcementList;
 }
 
-List<Announcement> getAnnouncements() {
-  initiate();
-  return _announcementList;
+class HtmlParsing {
+  static List<Announcement> getAnnouncements() {
+    return announcementList;
+  }
 }
