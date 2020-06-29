@@ -1,5 +1,5 @@
 import '../models/people.dart';
-import '../components/custom_list_tile.dart';
+import '../components/contact_list_tile.dart';
 import 'package:flutter/material.dart';
 
 class Contacts extends StatelessWidget {

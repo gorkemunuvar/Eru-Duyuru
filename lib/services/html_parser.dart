@@ -1,13 +1,13 @@
-import 'package:http/http.dart'; // Contains a client for making API calls
-import 'package:html/parser.dart'; // Contains HTML parsers to generate a Document object
-import 'package:html/dom.dart'; // Contains DOM related classes for extracting data from elements
+import 'package:http/http.dart';
+import 'package:html/parser.dart';
+import 'package:html/dom.dart';
 import '../models/announcement.dart';
 
 List<Announcement> announcementList = List();
 
-Future initiate() async {
+Future initiate(String url, String startingLink) async {
   var client = Client();
-  Response response = await client.get('https://bm.erciyes.edu.tr/?Anasayfa');
+  Response response = await client.get(url);
 
   if (response.statusCode == 200) {
     print("started");
@@ -16,18 +16,23 @@ Future initiate() async {
     List<Element> announcements =
         document.querySelectorAll('h5.post-title > a.font-13');
 
-    String pageLink = 'https://bm.erciyes.edu.tr/index.asp';
+    List<Element> dates = document.querySelectorAll('tr > td.font-12');
+
+    String pageLink = startingLink;
 
     announcementList.clear();
-    for (var announcement in announcements) {
-      String link = pageLink + announcement.attributes['href'];
 
-      print(announcement.text);
+    for (var i = 0; i < 10; i++) {
+      String link = pageLink + announcements[i].attributes['href'];
+
       print(link);
+      print(dates[i].text);
+      print(announcements[i].text);
 
       announcementList.add(Announcement(
-        title: announcement.text,
+        title: announcements[i].text,
         link: link,
+        date: dates[i].text,
       ));
     }
 

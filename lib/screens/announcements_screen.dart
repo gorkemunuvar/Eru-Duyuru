@@ -1,5 +1,6 @@
+import 'package:anons/components/announcement_list_tile.dart';
 import 'package:flutter/material.dart';
-import '../components/custom_list_tile.dart';
+import '../components/announcement_list_tile.dart';
 import 'package:anons/models/announcement.dart';
 
 class AnnouncementsScreen extends StatelessWidget {
@@ -17,10 +18,10 @@ class AnnouncementsScreen extends StatelessWidget {
           child: ListView.builder(
             itemCount: announcements.length,
             itemBuilder: (context, index) {
-              return CustomListTile(
-                name: announcements[index].title,
-                email: announcements[index].link,
-                phoneNumber: "213 123 123",
+              return AnnouncementListTile(
+                title: announcements[index].title,
+                date: announcements[index].date,
+                link: announcements[index].link,
               );
             },
           ),
