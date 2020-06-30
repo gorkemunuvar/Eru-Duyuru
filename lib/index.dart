@@ -7,3 +7,4 @@ export 'screens/settings_screen.dart';
 export 'screens/announcements_screen.dart';
 
 export 'models/announcement.dart';
+export 'models/department.dart';

@@ -2,49 +2,60 @@ import 'package:http/http.dart';
 import 'package:html/parser.dart';
 import 'package:html/dom.dart';
 import '../models/announcement.dart';
+import '../models/department.dart';
 
-List<Announcement> announcementList = List();
+List<Department> _departments = List();
 
-Future initiate(String url, String startingLink) async {
-  var client = Client();
-  Response response = await client.get(url);
+Future initiate(List<Department> departments) async {
+  for (var department in departments) {
+    List<Announcement> announcementList = List();
+    var client = Client();
+    Response response = await client.get(department.url);
 
-  if (response.statusCode == 200) {
-    print("started");
+    if (response.statusCode == 200) {
+      print("-------------------\nstarted\n-------------------");
 
-    var document = parse(response.body);
-    List<Element> announcements =
-        document.querySelectorAll('h5.post-title > a.font-13');
+      var document = parse(response.body);
 
-    List<Element> dates = document.querySelectorAll('tr > td.font-12');
+      List<Element> announcements =
+          document.querySelectorAll('h5.post-title > a.font-13');
+      List<Element> dates = document.querySelectorAll('tr > td.font-12');
 
-    String pageLink = startingLink;
+      String pageLink = department.startingLink;
+      for (var i = 0; i < 10; i++) {
+        String link = pageLink + announcements[i].attributes['href'];
 
-    announcementList.clear();
+        print(link);
+        print(dates[i].text);
+        print(announcements[i].text);
 
-    for (var i = 0; i < 10; i++) {
-      String link = pageLink + announcements[i].attributes['href'];
+        announcementList.add(Announcement(
+          title: announcements[i].text,
+          link: link,
+          date: dates[i].text,
+        ));
+      }
 
-      print(link);
-      print(dates[i].text);
-      print(announcements[i].text);
+      department.setAnnouncements(announcementList);
+      announcementList.clear();
 
-      announcementList.add(Announcement(
-        title: announcements[i].text,
-        link: link,
-        date: dates[i].text,
-      ));
+      print("-------------------\nfinished\n-------------------");
     }
-
-    print("finished.");
   }
 
-  //return json.encode(linkMap);
-  return announcementList;
+  _departments = departments;
+
+  return departments;
 }
 
 class HtmlParsing {
-  static List<Announcement> getAnnouncements() {
-    return announcementList;
+  static List<Announcement> getAnnouncements(String departmentName) {
+    for (var department in _departments) {
+      print("nameeeeeeee\n$department.name");
+      if (department.name == departmentName)
+        return department.getAnnouncements();
+    }
+
+    return null;
   }
 }

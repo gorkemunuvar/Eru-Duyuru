@@ -19,14 +19,19 @@ class MyStatefulWidget extends StatefulWidget {
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
 
+  List<Announcement> makine = List();
+  List<Announcement> bilgisayar = List();
+  List<Announcement> elektrik = List();
+
   List<Widget> _widgetOptions = <Widget>[
     DefaultTabController(
       length: 3,
       child: Container(
         child: Column(
           children: <Widget>[
-            new Container(
-              child: new TabBar(
+            Container(
+              child: TabBar(
+                isScrollable: true,
                 indicatorColor: Colors.amber[700],
                 labelColor: Colors.amber[700],
                 unselectedLabelColor: Colors.grey,
@@ -38,61 +43,18 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               ),
             ),
             Expanded(
-              child: new Container(
+              child: Container(
                 height: 80.0,
                 child: TabBarView(
                   children: <Widget>[
-                    FutureBuilder(
-                      future: initiate(
-                        'https://bm.erciyes.edu.tr/?Anasayfa',
-                        'https://bm.erciyes.edu.tr/index.asp',
-                      ),
-                      builder: (context, snapshot) {
-                        if (snapshot.hasData) {
-                          return AnnouncementsScreen(
-                            announcements: HtmlParsing.getAnnouncements(),
-                          );
-                        } else if (snapshot.hasError)
-                          return Text("${snapshot.error}");
-
-                        return Center(
-                          child: CircularProgressIndicator(),
-                        );
-                      },
+                    AnnouncementsScreen(
+                      announcements: HtmlParsing.getAnnouncements("Bilgisayar"),
                     ),
-                    FutureBuilder(
-                      future: initiate(
-                        'https://em.erciyes.edu.tr/?Anasayfa',
-                        'https://em.erciyes.edu.tr/',
-                      ),
-                      builder: (context, snapshot) {
-                        if (snapshot.hasData) {
-                          return AnnouncementsScreen(
-                            announcements: HtmlParsing.getAnnouncements(),
-                          );
-                        } else if (snapshot.hasError)
-                          return Text("${snapshot.error}");
-
-                        return Center(
-                          child: CircularProgressIndicator(),
-                        );
-                      },
+                    AnnouncementsScreen(
+                      announcements: HtmlParsing.getAnnouncements("Elektirik"),
                     ),
-                    FutureBuilder(
-                      future: initiate('https://me.erciyes.edu.tr/?Anasayfa',
-                          'https://me.erciyes.edu.tr/'),
-                      builder: (context, snapshot) {
-                        if (snapshot.hasData) {
-                          return AnnouncementsScreen(
-                            announcements: HtmlParsing.getAnnouncements(),
-                          );
-                        } else if (snapshot.hasError)
-                          return Text("${snapshot.error}");
-
-                        return Center(
-                          child: CircularProgressIndicator(),
-                        );
-                      },
+                    AnnouncementsScreen(
+                      announcements: HtmlParsing.getAnnouncements("Makine"),
                     ),
                   ],
                 ),
@@ -113,9 +75,29 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
   @override
   Widget build(BuildContext context) {
+    List<Department> departments = [
+      Department(
+        name: 'Bilgisayar',
+        url: 'https://bm.erciyes.edu.tr/?Anasayfa',
+        startingLink: 'https://bm.erciyes.edu.tr/',
+      ),
+      Department(
+        name: 'Elektirik',
+        url: 'https://em.erciyes.edu.tr/?Anasayfa',
+        startingLink: 'https://em.erciyes.edu.tr/',
+      ),
+      Department(
+        name: 'Makine',
+        url: 'https://me.erciyes.edu.tr/?Anasayfa',
+        startingLink: 'https://me.erciyes.edu.tr/',
+      )
+    ];
+
     return Scaffold(
       appBar: AppBar(
-        //Settings
+        backgroundColor: Colors.amber[700],
+        title: const Text('Erciyes Üniversitesi'),
+        //Settings Icon
         actions: <Widget>[
           Padding(
               padding: EdgeInsets.only(right: 20.0),
@@ -134,10 +116,21 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 ),
               )),
         ],
-        backgroundColor: Colors.amber[700],
-        title: const Text('Erciyes Üniversitesi'),
       ),
-      body: _widgetOptions.elementAt(_selectedIndex),
+      body: FutureBuilder(
+        future: initiate(departments),
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            return _widgetOptions.elementAt(_selectedIndex);
+          } else if (snapshot.hasError) return Text("${snapshot.error}");
+
+          return Center(
+            child: CircularProgressIndicator(),
+          );
+        },
+      ),
+
+      //_widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
@@ -156,15 +149,3 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     );
   }
 }
-
-/* class TabBarNavigation extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return TabBarView(controller: ,children: <Widget>[
-      Text("Scrreen 1"),
-      Text("Screen 2"),
-      Text("Screen 3"),
-    ]);
-  }
-}
- */
