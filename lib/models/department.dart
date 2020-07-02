@@ -1,23 +1,21 @@
 import 'package:flutter/foundation.dart';
 import 'announcement.dart';
 
+enum DepartmentTypes {
+  Bilgisayar,
+  Elektrik,
+  Makine,
+}
+
 class Department {
-  final String name;
+  final DepartmentTypes type;
   final String url;
   final String startingLink;
-  List<Announcement> _announcements;
+  List<Announcement> announcements = List<Announcement>();
 
   Department({
-    @required this.name,
+    @required this.type,
     @required this.url,
     @required this.startingLink,
   });
-
-  void setAnnouncements(List<Announcement> announcements) {
-    _announcements = announcements;
-  }
-
-  List<Announcement> getAnnouncements() {
-    return _announcements;
-  }
 }
