@@ -15,15 +15,15 @@ class ExpansionTileSampleState extends State<ExpansionTileSample> {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      home: new Scaffold(
-        appBar: new AppBar(
+      home: Scaffold(
+        appBar: AppBar(
           title: const Text('ExpansionTile'),
         ),
-        body: new ExpansionTile(
-            title: new Text(this.foos),
+        body: ExpansionTile(
+            title: Text(this.foos),
             backgroundColor: Theme.of(context).accentColor.withOpacity(0.025),
             children: <Widget>[
-              new ListTile(
+              ListTile(
                 title: const Text('One'),
                 onTap: () {
                   setState(() {
@@ -31,7 +31,7 @@ class ExpansionTileSampleState extends State<ExpansionTileSample> {
                   });
                 },
               ),
-              new ListTile(
+              ListTile(
                 title: const Text('Two'),
                 onTap: () {
                   setState(() {
@@ -39,7 +39,7 @@ class ExpansionTileSampleState extends State<ExpansionTileSample> {
                   });
                 },
               ),
-              new ListTile(
+              ListTile(
                 title: const Text('Three'),
                 onTap: () {
                   setState(() {

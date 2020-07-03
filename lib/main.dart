@@ -1,3 +1,5 @@
+import 'package:anons/screens/department_announcements_screen.dart';
+
 import 'index.dart';
 
 void main() => runApp(MyApp());
@@ -6,20 +8,29 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyStatefulWidget(),
       navigatorKey: navigatorKey,
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomeScreen(),
+        '/Settings': (context) => SetttingsScreen(),
+        '/DepartmentAnnouncements': (context) => DepartmentAnnouncementsScreen(
+              title: "Bilgisayar Mühendisliği",
+              announcements:
+                  HtmlParsing.getAnnouncements(DepartmentTypes.Bilgisayar),
+            ),
+      },
     );
   }
 }
 
 final GlobalKey<NavigatorState> navigatorKey = new GlobalKey<NavigatorState>();
 
-class MyStatefulWidget extends StatefulWidget {
+class HomeScreen extends StatefulWidget {
   @override
-  _MyStatefulWidgetState createState() => _MyStatefulWidgetState();
+  _HomeScreenState createState() => _HomeScreenState();
 }
 
-class _MyStatefulWidgetState extends State<MyStatefulWidget> {
+class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
 
   List<Widget> _widgetOptions = <Widget>[
@@ -35,8 +46,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 labelColor: Colors.amber[700],
                 unselectedLabelColor: Colors.grey,
                 tabs: [
-                  Tab(text: 'Bilgisayar Mühehndisliği'),
-                  Tab(text: 'E. Elektronik Mühendislii'),
+                  Tab(text: 'Bilgisayar Mühendisliği'),
+                  Tab(text: 'E. Elektronik Mühendisliği'),
                   Tab(text: 'Makina Mühendisliği'),
                 ],
               ),
@@ -131,7 +142,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               ),
               ListTileCard(
                 title: 'Bilgisayar Mühendisliği',
-                onTap: () {},
+                onTap: () {
+                  navigatorKey.currentState
+                      .pushNamed('/DepartmentAnnouncements');
+                },
               ),
               ListTileCard(
                 title: 'Biyomedikal Mühendisliği',
@@ -170,7 +184,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 onTap: () {},
               ),
               ListTileCard(
-                title: 'Makine Mühendisliği Bölümü',
+                title: 'Makine Mühendisliği',
                 onTap: () {},
               ),
               ListTileCard(
@@ -201,7 +215,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.amber[700],
+        backgroundColor: kAppBarColor,
         title: const Text('Erciyes Üniversitesi'),
         //Settings Icon
         actions: <Widget>[
@@ -209,12 +223,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               padding: EdgeInsets.only(right: 20.0),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) {
-                      return SetttingsScreen();
-                    }),
-                  );
+                  navigatorKey.currentState.pushNamed('/Settings');
                 },
                 child: Icon(
                   Icons.settings,
@@ -244,48 +253,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.amber[800],
         onTap: _onItemTapped,
-      ),
-    );
-  }
-}
-
-class DepartmentsExpansionTile extends StatelessWidget {
-  final String title;
-  final List<Widget> childrens;
-
-  DepartmentsExpansionTile({
-    @required this.title,
-    @required this.childrens,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      child: ExpansionTile(
-        title: Text(title),
-        children: childrens,
-      ),
-    );
-  }
-}
-
-class ListTileCard extends StatelessWidget {
-  final String title;
-  final Function onTap;
-
-  ListTileCard({@required this.title, this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 15.0),
-      child: Card(
-        child: ListTile(
-          title: Text(title),
-          onTap: () {
-            onTap();
-          },
-        ),
       ),
     );
   }
