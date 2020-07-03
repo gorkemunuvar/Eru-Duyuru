@@ -7,9 +7,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: MyStatefulWidget(),
+      navigatorKey: navigatorKey,
     );
   }
 }
+
+final GlobalKey<NavigatorState> navigatorKey = new GlobalKey<NavigatorState>();
 
 class MyStatefulWidget extends StatefulWidget {
   @override
@@ -117,9 +120,73 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         ),
       ),
     ),
-    ListView.builder(
-      itemBuilder: (BuildContext context, int index) => EntryItem(data[index]),
-      itemCount: data.length,
+    ListView(
+      children: <Widget>[
+        DepartmentsExpansionTile(
+            title: "Mühendislik Fakültesi",
+            childrens: <Widget>[
+              ListTileCard(
+                title: "Mühendislik Fakültesi Anasayfası",
+                onTap: () {},
+              ),
+              ListTileCard(
+                title: 'Bilgisayar Mühendisliği',
+                onTap: () {},
+              ),
+              ListTileCard(
+                title: 'Biyomedikal Mühendisliği',
+                onTap: () {},
+              ),
+              ListTileCard(
+                title: 'Çevre Mühendisliği',
+                onTap: () {},
+              ),
+              ListTileCard(
+                title: 'Elektrik-Elektronik Mühendisliği',
+                onTap: () {},
+              ),
+              ListTileCard(
+                title: 'Endüstri Mühendisliği',
+                onTap: () {},
+              ),
+              ListTileCard(
+                title: 'Endüstriyel Tasarım Mühendisliği',
+                onTap: () {},
+              ),
+              ListTileCard(
+                title: 'Enerji Sistemleri Mühendisliği',
+                onTap: () {},
+              ),
+              ListTileCard(
+                title: 'Gıda Mühendisliği',
+                onTap: () {},
+              ),
+              ListTileCard(
+                title: 'Harita Mühendisliği',
+                onTap: () {},
+              ),
+              ListTileCard(
+                title: 'İnşaat Mühendisliği',
+                onTap: () {},
+              ),
+              ListTileCard(
+                title: 'Makine Mühendisliği Bölümü',
+                onTap: () {},
+              ),
+              ListTileCard(
+                title: 'Malzeme Bilimi ve Mühendisliği',
+                onTap: () {},
+              ),
+              ListTileCard(
+                title: 'Mekatronik Mühendisliği',
+                onTap: () {},
+              ),
+              ListTileCard(
+                title: "Tekstil Mühendisliği ",
+                onTap: () {},
+              )
+            ]),
+      ],
     ),
     Contacts(),
   ];
@@ -182,78 +249,44 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   }
 }
 
-// One entry in the multilevel list displayed by this app.
-class Entry {
-  Entry(this.title, [this.children = const <Entry>[]]);
-
+class DepartmentsExpansionTile extends StatelessWidget {
   final String title;
-  final List<Entry> children;
-}
+  final List<Widget> childrens;
 
-// The entire multilevel list displayed by this app.
-final List<Entry> data = <Entry>[
-  Entry(
-    'Mühendislik Fakültesi',
-    <Entry>[
-      Entry('Bilgisayar Mühendisliği'),
-      Entry('Biyomedikal Mühendisliği'),
-      Entry('Çevre Mühendisliği'),
-      Entry('Elektrik-Elektronik Mühendisliği'),
-      Entry('Endüstri Mühendisliği'),
-      Entry('Endüstriyel Tasarım Mühendisliği'),
-      Entry('Enerji Sistemleri Mühendisliği'),
-      Entry('Gıda Mühendisliği'),
-      Entry('Harita Mühendisliği'),
-      Entry('İnşaat Mühendisliği'),
-      Entry('Makine Mühendisliği Bölümü'),
-      Entry('Malzeme Bilimi ve Mühendisliği'),
-      Entry('Mekatronik Mühendisliği'),
-      Entry('Tekstil Mühendisliği'),
-    ],
-  ),
-  Entry(
-    'Chapter B',
-    <Entry>[
-      Entry('Section B0'),
-      Entry('Section B1'),
-    ],
-  ),
-  Entry(
-    'Chapter C',
-    <Entry>[
-      Entry('Section C0'),
-      Entry('Section C1'),
-      Entry(
-        'Section C2',
-        <Entry>[
-          Entry('Item C2.0'),
-          Entry('Item C2.1'),
-          Entry('Item C2.2'),
-          Entry('Item C2.3'),
-        ],
-      ),
-    ],
-  ),
-];
-
-// Displays one Entry. If the entry has children then it's displayed
-// with an ExpansionTile.
-class EntryItem extends StatelessWidget {
-  const EntryItem(this.entry);
-
-  final Entry entry;
-
-  Widget _buildTiles(Entry root) {
-    if (root.children.isEmpty) return ListTile(title: Text(root.title));
-    return ExpansionTile(
-      key: PageStorageKey<Entry>(root),
-      title: Text(root.title),
-      children: root.children.map(_buildTiles).toList(),
-    );
-  }
+  DepartmentsExpansionTile({
+    @required this.title,
+    @required this.childrens,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return _buildTiles(entry);
+    return Card(
+      child: ExpansionTile(
+        title: Text(title),
+        children: childrens,
+      ),
+    );
+  }
+}
+
+class ListTileCard extends StatelessWidget {
+  final String title;
+  final Function onTap;
+
+  ListTileCard({@required this.title, this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 15.0),
+      child: Card(
+        child: ListTile(
+          title: Text(title),
+          onTap: () {
+            onTap();
+          },
+        ),
+      ),
+    );
   }
 }
