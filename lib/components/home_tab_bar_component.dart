@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:anons/models/department.dart';
 import 'package:anons/components/future_builder_announcements.dart';
 
-DefaultTabController TabBarComponent() {
+DefaultTabController HomeTabBar() {
   return DefaultTabController(
     length: 3,
     child: Container(
@@ -27,25 +27,16 @@ DefaultTabController TabBarComponent() {
               child: TabBarView(
                 children: <Widget>[
                   FutureBuilderAnnouncements(
-                    Department(
-                      type: DepartmentTypes.Bilgisayar,
-                      url: 'https://bm.erciyes.edu.tr/?Anasayfa',
-                      startingLink: 'https://bm.erciyes.edu.tr/',
-                    ),
+                    Department.getDepartmentInstance(
+                        DepartmentTypes.MuhendislikBilgisayar),
                   ),
                   FutureBuilderAnnouncements(
-                    Department(
-                      type: DepartmentTypes.Elektrik,
-                      url: 'https://em.erciyes.edu.tr/?Anasayfa',
-                      startingLink: 'https://em.erciyes.edu.tr/',
-                    ),
+                    Department.getDepartmentInstance(
+                        DepartmentTypes.MuhendislikElektrik),
                   ),
                   FutureBuilderAnnouncements(
-                    Department(
-                      type: DepartmentTypes.Makine,
-                      url: 'https://me.erciyes.edu.tr/?Anasayfa',
-                      startingLink: 'https://me.erciyes.edu.tr/',
-                    ),
+                    Department.getDepartmentInstance(
+                        DepartmentTypes.MuhendislikMakine),
                   ),
                 ],
               ),

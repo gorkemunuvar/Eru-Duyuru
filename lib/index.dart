@@ -4,7 +4,7 @@ export 'package:anons/services/html_parser.dart';
 export 'utilities/constants.dart';
 
 export 'components/list_tile_card.dart';
-export 'components/tab_bar_component.dart';
+export 'components/home_tab_bar_component.dart';
 export 'components/departments_list_view.dart';
 export 'components/departments_expansion_tile.dart';
 export 'components/future_builder_announcements.dart';

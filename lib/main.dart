@@ -34,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
 
   List<Widget> _widgetOptions = <Widget>[
-    TabBarComponent(),
+    HomeTabBar(),
     DepartmentsListView(),
     Contacts(),
   ];
