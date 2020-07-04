@@ -42,6 +42,8 @@ Future initiate(Department department) async {
 
 class HtmlParsing {
   static List<Announcement> getAnnouncements(DepartmentTypes type) {
+    print("Type --> ${type}");
+
     for (var d in _departments) {
       if (type == d.type) {
         return d.announcements;
