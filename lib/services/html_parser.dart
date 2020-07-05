@@ -31,6 +31,12 @@ Future initiate(Department department) async {
 
       List<Element> dates = document.querySelectorAll(department.dateSelector);
 
+      print("Titles len = ${titles.length}");
+      print("Dates len = ${dates.length}");
+      /* for (var l in links) {
+        print("Link = ${l.text}");
+      } */
+
       String pageLink = department.startingLink;
 
       if (titles.length == 0) {
