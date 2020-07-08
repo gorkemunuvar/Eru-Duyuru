@@ -5,13 +5,13 @@ import 'package:anons/services/html_parser.dart';
 
 FutureBuilder FutureBuilderAnnouncements(Department department) {
   return FutureBuilder(
-    future: initiate(
+    future: getAnnouncements(
       department,
     ),
     builder: (context, snapshot) {
       if (snapshot.hasData) {
         return AnnouncementsScreen(
-          announcements: HtmlParsing.getAnnouncements(department.type),
+          announcements: HtmlParsing.getAnnouncementList(department.type),
         );
       } else if (snapshot.hasError) {
         return Text("${snapshot.error}");

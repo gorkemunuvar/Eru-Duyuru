@@ -8,6 +8,8 @@ class Department {
   final String titleSelector;
   final String linkSelector;
   final String dateSelector;
+  final String dateSelector2;
+  final String dateSelector3;
 
   List<Announcement> announcements = List<Announcement>();
 
@@ -17,7 +19,9 @@ class Department {
     @required this.startingLink,
     @required this.titleSelector,
     @required this.linkSelector,
-    @required this.dateSelector,
+    this.dateSelector,
+    this.dateSelector2,
+    this.dateSelector3,
   });
 
   static Department getDepartmentInstance(DepartmentTypes type) {
@@ -163,14 +167,15 @@ List<Department> _departments = [
     linkSelector: 'span.aciklama >  a[href]',
     dateSelector: 'li > span.img > span.yil',
   ),
-  /*Hata var.*/
   Department(
     type: DepartmentTypes.FakulteEdebiyat,
-    url: 'https://edebiyat.erciyes.edu.tr/DYRT/Tum-Duyuru-ve-Haberler/0',
+    url: 'https://edebiyat.erciyes.edu.tr/',
     startingLink: 'https://edebiyat.erciyes.edu.tr/',
-    titleSelector: 'div.DuyuruSatir > div.DuyuruBaslik > p >  a',
-    linkSelector: 'div.DuyuruSatir > div.DuyuruBaslik > p >  a[href]',
-    dateSelector: 'div.DuyuruBaslik > div.DuyuruTarih >  span',
+    titleSelector: 'li > span.aciklama > a',
+    linkSelector: 'li > span.aciklama > a[href]',
+    dateSelector: 'li > span.img > span.gun',
+    dateSelector2: 'li > span.img > span.ay',
+    dateSelector3: 'li > span.img > span.yil',
   ),
   Department(
     type: DepartmentTypes.EgitimAnasayfa,
@@ -228,16 +233,16 @@ List<Department> _departments = [
     linkSelector: 'div.news-content-holder > h3 > a[href]',
     dateSelector: 'div.post-date > span',
   ),
-  /*Duyurular İngilizce geliyor.*/
   Department(
     type: DepartmentTypes.FakulteFen,
-    url: 'http://fen.erciyes.edu.tr/DYRT/Tum-Duyuru-ve-Haberler/0',
-    startingLink: 'http://fen.erciyes.edu.tr',
-    titleSelector: 'div.DuyuruBaslik > p >  a',
-    linkSelector: 'div.DuyuruBaslik > p >  a[href]',
-    dateSelector: 'div.DuyuruTarih >  span',
+    url: 'http://fen.erciyes.edu.tr',
+    startingLink: 'https://fen.erciyes.edu.tr/',
+    titleSelector: 'li > span.aciklama > a',
+    linkSelector: 'li > span.aciklama > a[href]',
+    dateSelector: 'li > span.img > span.gun',
+    dateSelector2: 'li > span.img > span.ay',
+    dateSelector3: 'li > span.img > span.yil',
   ),
-  /*Duyuru, haber, etkinlikleri çekiyor. */
   Department(
     type: DepartmentTypes.FakulteGuzelSanatlar,
     url: 'http://guzelsanat.erciyes.edu.tr',
@@ -246,25 +251,26 @@ List<Department> _departments = [
     linkSelector: 'div.card-body > h3 > a[href]',
     dateSelector: 'div.card-head > div.card-stamp > a',
   ),
-  /*Duyuru bulunamadı. */
   Department(
     type: DepartmentTypes.FakulteHavacilik,
-    url: 'https://havacilik.erciyes.edu.tr/DYRT/Tum-Duyuru-ve-Haberler/0',
-    startingLink: 'https://havacilik.erciyes.edu.tr',
-    titleSelector: 'div.DuyuruBaslik > p >  a',
-    linkSelector: 'div.DuyuruBaslik > p >  a[href]',
-    dateSelector: 'div.DuyuruTarih >  span',
+    url: 'https://havacilik.erciyes.edu.tr/',
+    startingLink: 'https://havacilik.erciyes.edu.tr/',
+    titleSelector: 'li > span.aciklama > a',
+    linkSelector: 'li > span.aciklama > a[href]',
+    dateSelector: 'li > span.img > span.gun',
+    dateSelector2: 'li > span.img > span.ay',
+    dateSelector3: 'li > span.img > span.yil',
   ),
-  /*Duyuru bulunamadı. */
   Department(
     type: DepartmentTypes.FakulteHukuk,
-    url: 'https://hukuk.erciyes.edu.tr/DYRT/Tum-Duyuru-ve-Haberler/0',
-    startingLink: 'https://hukuk.erciyes.edu.tr',
-    titleSelector: 'div.DuyuruBaslik > p >  a',
-    linkSelector: 'div.DuyuruBaslik > p >  a[href]',
-    dateSelector: 'div.DuyuruTarih >  span',
+    url: 'https://hukuk.erciyes.edu.tr/',
+    startingLink: 'https://hukuk.erciyes.edu.tr/', //düzelt
+    titleSelector: 'li > span.aciklama > a',
+    linkSelector: 'li > span.aciklama > a[href]',
+    dateSelector: 'li > span.img > span.gun',
+    dateSelector2: 'li > span.img > span.ay',
+    dateSelector3: 'li > span.img > span.yil',
   ),
-  /*Türkçe karakter sorunu. */
   Department(
     type: DepartmentTypes.FakulteIIBF,
     url: 'http://iibf.erciyes.edu.tr',
@@ -273,58 +279,62 @@ List<Department> _departments = [
     linkSelector: 'div.Categories > ul > li > a[href]',
     dateSelector: 'div.Categories > ul > li > span.label',
   ),
-  /*İngilizce çekiyor */
   Department(
     type: DepartmentTypes.FakulteIlahiyat,
-    url: 'http://ilahiyat.erciyes.edu.tr/DYRT/Tum-Duyuru-ve-Haberler/0',
-    startingLink: 'http://ilahiyat.erciyes.edu.tr',
-    titleSelector: 'div.DuyuruBaslik > p >  a',
-    linkSelector: 'div.DuyuruBaslik > p >  a[href]',
-    dateSelector: 'div.DuyuruTarih >  span',
+    url: 'https://ilahiyat.erciyes.edu.tr/',
+    startingLink: 'https://ilahiyat.erciyes.edu.tr/',
+    titleSelector: 'li > span.aciklama > a',
+    linkSelector: 'li > span.aciklama > a[href]',
+    dateSelector: 'li > span.img > span.gun',
+    dateSelector2: 'li > span.img > span.ay',
+    dateSelector3: 'li > span.img > span.yil',
   ),
-  /*Tarih çekerken hatalı */
   Department(
     type: DepartmentTypes.FakulteIletisim,
     url: 'http://iletisim.erciyes.edu.tr/category/duyuru/',
     startingLink: 'asdfsss',
     titleSelector: 'div.post-info > h2 > a',
     linkSelector: 'div.post-info > h2 > a[href]',
-    dateSelector: 'div.post-info > h2 > p.postmetadata',
+    dateSelector: 'div.post-info > p.postmetadata',
   ),
-  /*Duyuru çekmiyor. Selectorlar hatalı. */
   Department(
     type: DepartmentTypes.FakulteMimarlik,
-    url: 'http://mimarlik.erciyes.edu.tr/duyurular',
+    url: 'http://mimarlik.erciyes.edu.tr',
     startingLink: 'http://mimarlik.erciyes.edu.tr',
-    titleSelector: 'div.habergenislik > div[3].text',
-    linkSelector: 'div.view > div > a[href]',
-    dateSelector: 'div.habergenislik > div[1]',
+    titleSelector: 'div.duyurugenislik2 > a',
+    linkSelector: 'div.duyurugenislik2 > a[href]',
+    dateSelector: 'div > div[style|=font]',
+    dateSelector2: 'div > div[style|=margin]',
   ),
-  /*İngilizce */
   Department(
     type: DepartmentTypes.FakulteSaglikBilimleri,
-    url: 'http://sbf.erciyes.edu.tr/DYRT/Tum-Duyuru-ve-Haberler/0',
-    startingLink: 'http://sbf.erciyes.edu.tr',
-    titleSelector: 'div.DuyuruBaslik > p >  a',
-    linkSelector: 'div.DuyuruBaslik > p >  a[href]',
-    dateSelector: 'div.DuyuruTarih >  span',
+    url: 'https://sbf.erciyes.edu.tr/',
+    startingLink: 'https://sbf.erciyes.edu.tr/',
+    titleSelector: 'li > span.aciklama > a',
+    linkSelector: 'li > span.aciklama > a[href]',
+    dateSelector: 'li > span.img > span.gun',
+    dateSelector2: 'li > span.img > span.ay',
+    dateSelector3: 'li > span.img > span.yil',
   ),
-  /*Duyuru bulunamadı. */
   Department(
     type: DepartmentTypes.FakulteSeyraniZiraat,
-    url: 'https://ziraat.erciyes.edu.tr/DYRT/Tum-Duyuru-ve-Haberler/0',
-    startingLink: 'http://ziraat.erciyes.edu.tr',
-    titleSelector: 'div.DuyuruBaslik > p >  a',
-    linkSelector: 'div.DuyuruBaslik > p >  a[href]',
-    dateSelector: 'div.DuyuruTarih >  span',
+    url: 'https://ziraat.erciyes.edu.tr/',
+    startingLink: 'https://ziraat.erciyes.edu.tr/',
+    titleSelector: 'li > span.aciklama > a',
+    linkSelector: 'li > span.aciklama > a[href]',
+    dateSelector: 'li > span.img > span.gun',
+    dateSelector2: 'li > span.img > span.ay',
+    dateSelector3: 'li > span.img > span.yil',
   ),
   Department(
     type: DepartmentTypes.FakulteSporBilimleri,
-    url: 'https://spbf.erciyes.edu.tr/DYRT/Tum-Duyuru-ve-Haberler/0',
-    startingLink: 'http://spbf.erciyes.edu.tr',
-    titleSelector: 'div.DuyuruBaslik > p >  a',
-    linkSelector: 'div.DuyuruBaslik > p >  a[href]',
-    dateSelector: 'div.DuyuruTarih >  span',
+    url: 'https://spbf.erciyes.edu.tr/',
+    startingLink: 'https://spbf.erciyes.edu.tr/',
+    titleSelector: 'li > span.aciklama > a',
+    linkSelector: 'li > span.aciklama > a[href]',
+    dateSelector: 'li > span.img > span.gun',
+    dateSelector2: 'li > span.img > span.ay',
+    dateSelector3: 'li > span.img > span.yil',
   ),
   Department(
     type: DepartmentTypes.FakulteTip,
@@ -334,7 +344,6 @@ List<Department> _departments = [
     linkSelector: 'div.irs-courses-content > h4 > a[href]',
     dateSelector: 'li > p > a',
   ),
-  /*Türkçe karakter sorunu */
   Department(
     type: DepartmentTypes.FakulteTurizm,
     url: 'http://turizm.erciyes.edu.tr/duyurulist.asp',
@@ -351,7 +360,6 @@ List<Department> _departments = [
     linkSelector: 'div.profile-post-in > h3.heading-xs > a[href]',
     dateSelector: 'div.profile-post > span.profile-post-numb',
   ),
-  /*Tarihler Hatalı*/
   Department(
     type: DepartmentTypes.Erasmus,
     url: 'https://erasmus.erciyes.edu.tr/duyurular.asp',
@@ -366,7 +374,6 @@ List<Department> _departments = [
     startingLink: '',
     titleSelector: 'tr > td > span.NormalBlue',
     linkSelector: 'tr > td > span.NormalBlue',
-    dateSelector: 'tr > td > span.NormalBlue',
   ),
   /* Department(
     type: DepartmentTypes.Erasmus,

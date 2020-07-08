@@ -4,6 +4,13 @@ import 'package:anons/components/list_tile_card.dart';
 import 'package:anons/models/department.dart';
 import 'package:anons/components/departments_expansion_tile.dart';
 
+//TO DO
+/* *IIBF -> Türkçe Karakter sorunu
+   *Turizm Fakültesi -> Türkçe karakter sorunu.
+   *Erasmus -> RangeError(index) (Tarihler Hatalı)
+   *Güzel Sanatlar -> Duyuru, haber, etkinlikleri çekiyor.
+ */
+
 class DepartmentsListView extends StatelessWidget {
   void _showAnnouncements(String title, Department department) {
     //Those variables is for navigator in main.dart to navigate to /DepartmentAnnouncements
@@ -402,7 +409,6 @@ class DepartmentsListView extends StatelessWidget {
                 );
               },
             ),
-            /*Duyuru bulunamadı. */
             ListTileCard(
               paddingState: false,
               title: "Spor Bilimleri Fakültesi",
