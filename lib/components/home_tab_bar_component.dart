@@ -1,10 +1,13 @@
+import 'package:anons/index.dart';
 import 'package:flutter/material.dart';
-import 'package:anons/models/department.dart';
-import 'package:anons/components/future_builder_announcements.dart';
 
-DefaultTabController HomeTabBar() {
+DefaultTabController HomeTabBar(
+  int length,
+  List<Tab> tabList,
+  List<FutureBuilder> contentList,
+) {
   return DefaultTabController(
-    length: 3,
+    length: length == 0 ? 1 : length,
     child: Container(
       child: Column(
         children: <Widget>[
@@ -14,31 +17,23 @@ DefaultTabController HomeTabBar() {
               indicatorColor: Colors.amber[700],
               labelColor: Colors.amber[700],
               unselectedLabelColor: Colors.grey,
-              tabs: [
-                Tab(text: 'Bilgisayar Mühendisliği'),
-                Tab(text: 'E. Elektronik Mühendisliği'),
-                Tab(text: 'Makine Mühendisliği'),
-              ],
+              tabs: length == 0
+                  ? [Text("Erciyes Üniversitesi Anasayfası")]
+                  : tabList,
             ),
           ),
           Expanded(
             child: Container(
               height: 80.0,
               child: TabBarView(
-                children: <Widget>[
-                  FutureBuilderAnnouncements(
-                    Department.getDepartmentInstance(
-                        DepartmentTypes.MuhendislikBilgisayar),
-                  ),
-                  FutureBuilderAnnouncements(
-                    Department.getDepartmentInstance(
-                        DepartmentTypes.MuhendislikElektrik),
-                  ),
-                  FutureBuilderAnnouncements(
-                    Department.getDepartmentInstance(
-                        DepartmentTypes.MuhendislikMakine),
-                  ),
-                ],
+                children: length == 0
+                    ? [
+                        FutureBuilderAnnouncements(
+                          Department.getDepartmentInstance(
+                              DepartmentTypes.AnasayfaErciyesUniversitesi),
+                        )
+                      ]
+                    : contentList,
               ),
             ),
           ),

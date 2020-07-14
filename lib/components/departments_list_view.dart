@@ -7,8 +7,10 @@ import 'package:anons/components/departments_expansion_tile.dart';
 //TO DO
 /* *IIBF -> Türkçe Karakter sorunu
    *Turizm Fakültesi -> Türkçe karakter sorunu.
-   *Erasmus -> RangeError(index) (Tarihler Hatalı)
+   *Eğitim Bilimleri Enstitüsü -> Türkçe karakter sorunu.
    *Güzel Sanatlar -> Duyuru, haber, etkinlikleri çekiyor.
+   *Sağlık Bilimleri Ens. -> Tr karakter sorunu ve hatalı duyuru.
+   *Mevlana Duyuruları -> Redirect loop detected.
  */
 
 class DepartmentsListView extends StatelessWidget {
@@ -25,6 +27,7 @@ class DepartmentsListView extends StatelessWidget {
     return ListView(
       children: <Widget>[
         DepartmentsExpansionTile(
+          paddingState: false,
           title: "Fakülteler ve Bölümler",
           childrens: <Widget>[
             DepartmentsExpansionTile(
@@ -256,7 +259,6 @@ class DepartmentsListView extends StatelessWidget {
                   ),
                 ]),
             ListTileCard(
-              paddingState: false,
               title: "Diş Hekimliği Fakültesi",
               onTap: () {
                 _showAnnouncements(
@@ -267,7 +269,6 @@ class DepartmentsListView extends StatelessWidget {
               },
             ),
             ListTileCard(
-              paddingState: false,
               title: "Eczacılık Fakültesi",
               onTap: () {
                 _showAnnouncements(
@@ -278,7 +279,6 @@ class DepartmentsListView extends StatelessWidget {
               },
             ),
             ListTileCard(
-              paddingState: false,
               title: "Edebiyat Fakültesi",
               onTap: () {
                 _showAnnouncements(
@@ -290,7 +290,6 @@ class DepartmentsListView extends StatelessWidget {
               },
             ),
             ListTileCard(
-              paddingState: false,
               title: "Fen Fakültesi",
               onTap: () {
                 _showAnnouncements(
@@ -302,7 +301,6 @@ class DepartmentsListView extends StatelessWidget {
               },
             ),
             ListTileCard(
-              paddingState: false,
               title: "Güzel Sanatlar Fakültesi",
               onTap: () {
                 _showAnnouncements(
@@ -314,7 +312,6 @@ class DepartmentsListView extends StatelessWidget {
               },
             ),
             ListTileCard(
-              paddingState: false,
               title: "Havacılık Fakültesi",
               onTap: () {
                 _showAnnouncements(
@@ -326,7 +323,6 @@ class DepartmentsListView extends StatelessWidget {
               },
             ),
             ListTileCard(
-              paddingState: false,
               title: "Hukuk Fakültesi",
               onTap: () {
                 _showAnnouncements(
@@ -338,7 +334,6 @@ class DepartmentsListView extends StatelessWidget {
               },
             ),
             ListTileCard(
-              paddingState: false,
               title: "İktisadi Ve İdari Bilimler Fakültesi",
               onTap: () {
                 _showAnnouncements(
@@ -350,7 +345,6 @@ class DepartmentsListView extends StatelessWidget {
               },
             ),
             ListTileCard(
-              paddingState: false,
               title: "İlahiyat Fakültesi",
               onTap: () {
                 _showAnnouncements(
@@ -362,7 +356,6 @@ class DepartmentsListView extends StatelessWidget {
               },
             ),
             ListTileCard(
-              paddingState: false,
               title: "İletişim Fakültesi",
               onTap: () {
                 _showAnnouncements(
@@ -374,7 +367,6 @@ class DepartmentsListView extends StatelessWidget {
               },
             ),
             ListTileCard(
-              paddingState: false,
               title: "Mimarlık Fakültesi",
               onTap: () {
                 _showAnnouncements(
@@ -386,7 +378,6 @@ class DepartmentsListView extends StatelessWidget {
               },
             ),
             ListTileCard(
-              paddingState: false,
               title: "Sağlık Bilimleri Fakültesi",
               onTap: () {
                 _showAnnouncements(
@@ -398,7 +389,6 @@ class DepartmentsListView extends StatelessWidget {
               },
             ),
             ListTileCard(
-              paddingState: false,
               title: "Seyrani Ziraat Fakültesi",
               onTap: () {
                 _showAnnouncements(
@@ -410,7 +400,6 @@ class DepartmentsListView extends StatelessWidget {
               },
             ),
             ListTileCard(
-              paddingState: false,
               title: "Spor Bilimleri Fakültesi",
               onTap: () {
                 _showAnnouncements(
@@ -422,7 +411,6 @@ class DepartmentsListView extends StatelessWidget {
               },
             ),
             ListTileCard(
-              paddingState: false,
               title: "Tıp Fakültesi",
               onTap: () {
                 _showAnnouncements(
@@ -434,7 +422,6 @@ class DepartmentsListView extends StatelessWidget {
               },
             ),
             ListTileCard(
-              paddingState: false,
               title: "Turizm Fakültesi",
               onTap: () {
                 _showAnnouncements(
@@ -446,7 +433,6 @@ class DepartmentsListView extends StatelessWidget {
               },
             ),
             ListTileCard(
-              paddingState: false,
               title: "Veteriner Fakültesi",
               onTap: () {
                 _showAnnouncements(
@@ -460,6 +446,7 @@ class DepartmentsListView extends StatelessWidget {
           ],
         ),
         DepartmentsExpansionTile(
+          paddingState: false,
           title: "Meslek Yüksek Okulları",
           childrens: <Widget>[
             ListTileCard(
@@ -488,6 +475,7 @@ class DepartmentsListView extends StatelessWidget {
           ],
         ),
         DepartmentsExpansionTile(
+          paddingState: false,
           title: "Enstitüler",
           childrens: <Widget>[
             ListTileCard(
@@ -531,16 +519,6 @@ class DepartmentsListView extends StatelessWidget {
               },
             ),
             ListTileCard(
-              title: "Atatürk İlkeleri ve İnkılap Tarihi Enstitüsü",
-              onTap: () {
-                _showAnnouncements(
-                  "Atatürk İlkeleri ve İnkılap Tarihi Enstitüsü",
-                  Department.getDepartmentInstance(
-                      DepartmentTypes.EnstituAtaturkIlkeleriVeInkiplaplari),
-                );
-              },
-            ),
-            ListTileCard(
               title: "Güzel Sanatlar Enstitüsü",
               onTap: () {
                 _showAnnouncements(
@@ -557,6 +535,16 @@ class DepartmentsListView extends StatelessWidget {
                   "Sağlık Bilimleri Enstitüsü",
                   Department.getDepartmentInstance(
                       DepartmentTypes.EnstituSaglikBilimleri),
+                );
+              },
+            ),
+            ListTileCard(
+              title: "Sosyal Bilimler Enstitüsü",
+              onTap: () {
+                _showAnnouncements(
+                  "Sosyal Bilimler Enstitüsü",
+                  Department.getDepartmentInstance(
+                      DepartmentTypes.EnstituSosyalBilimler),
                 );
               },
             ),
@@ -587,12 +575,48 @@ class DepartmentsListView extends StatelessWidget {
         ),
         ListTileCard(
           paddingState: false,
+          title: "Erciyes Üniversitesi Anasayfası",
+          onTap: () {
+            _showAnnouncements(
+              "Erciyes Üni. Anasayfası",
+              Department.getDepartmentInstance(
+                DepartmentTypes.AnasayfaErciyesUniversitesi,
+              ),
+            );
+          },
+        ),
+        ListTileCard(
+          paddingState: false,
           title: "Erasmus Duyuruları",
           onTap: () {
             _showAnnouncements(
               "Erasmus Duyuruları",
               Department.getDepartmentInstance(
                 DepartmentTypes.Erasmus,
+              ),
+            );
+          },
+        ),
+        ListTileCard(
+          paddingState: false,
+          title: "Mevlana Duyuruları",
+          onTap: () {
+            _showAnnouncements(
+              "Mevlana Duyuruları",
+              Department.getDepartmentInstance(
+                DepartmentTypes.Mevlana,
+              ),
+            );
+          },
+        ),
+        ListTileCard(
+          paddingState: false,
+          title: "Farabi Duyuruları",
+          onTap: () {
+            _showAnnouncements(
+              "Farabi Duyuruları",
+              Department.getDepartmentInstance(
+                DepartmentTypes.Farabi,
               ),
             );
           },

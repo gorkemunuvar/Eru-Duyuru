@@ -13,12 +13,6 @@ bool _isDepartmentExist(Department d) {
     return false;
 }
 
-//TO DO
-/*
-  *Tarih olmayabilir.
-  *Tarih birden fazla selector ile seçilebilir.
-*/
-
 Future getAnnouncements(Department department) async {
   if (!_isDepartmentExist(department)) {
     Client client = Client();
@@ -57,7 +51,7 @@ Future getAnnouncements(Department department) async {
       //İlgili bölüme ait duyuru yoksa
       if (titles.length == 0) {
         Announcement newAnnouncement = Announcement(
-          title: "Bölüme ait duyuru bulunamadı :/",
+          title: "Malesef duyuru bulamadık. :/",
           link: "--",
           date: "--",
         );
@@ -66,7 +60,11 @@ Future getAnnouncements(Department department) async {
       }
       //İlgili bölüme ait duyuru bulunmuşsa
       else {
-        for (var i = 0; i < titles.length; i++) {
+        int boundary = department.listBoundary != null
+            ? department.listBoundary
+            : titles.length;
+
+        for (int i = 0; i < boundary; i++) {
           if (i == 10) break;
 
           String link = pageLink + links[i].text.trim();
@@ -82,6 +80,9 @@ Future getAnnouncements(Department department) async {
                 date += ' ' + dates3[i].text.trim();
             }
           }
+          var myRichRunesMessage = new Runes(titles[i].text.trim());
+
+          print(String.fromCharCodes(myRichRunesMessage));
 
           Announcement newAnnouncement = Announcement(
             title: titles[i].text.trim(),

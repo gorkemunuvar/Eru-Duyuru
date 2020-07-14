@@ -10,22 +10,17 @@ class AnnouncementsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Padding(
-          padding: const EdgeInsets.all(5.0),
-          child: ListView.builder(
-            itemCount: announcements.length,
-            itemBuilder: (context, index) {
-              return AnnouncementListTile(
-                title: announcements[index].title,
-                date: announcements[index].date,
-                link: announcements[index].link,
-              );
-            },
-          ),
-        ),
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: ListView.builder(
+        itemCount: announcements.length,
+        itemBuilder: (context, index) {
+          return AnnouncementListTile(
+            title: announcements[index].title,
+            date: announcements[index].date,
+            link: announcements[index].link,
+          );
+        },
       ),
     );
   }

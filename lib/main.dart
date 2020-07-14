@@ -1,11 +1,36 @@
 import 'index.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() => runApp(MyApp());
 
 String currentDepartmentName = "";
 Department currentDepartment;
 
+int _departmentsLength = 0;
+List<Tab> _tabList = List<Tab>();
+List<FutureBuilder> _contentList = List<FutureBuilder>();
+
+Future _readDeviceStorage() async {
+  final prefs = await SharedPreferences.getInstance();
+  List<String> departmentNames = prefs.getStringList('departments') ?? [];
+
+  _departmentsLength = departmentNames.length;
+
+  for (String name in departmentNames) {
+    _tabList.add(Tab(text: name));
+    _contentList.add(FutureBuilderAnnouncements(
+      Department.getDepartmentInstance(Department.getDepartmentType(name)),
+    ));
+  }
+
+  return departmentNames;
+}
+
 class MyApp extends StatelessWidget {
+  MyApp() {
+    print("test");
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,7 +38,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => HomeScreen(),
-        '/Settings': (context) => SetttingsScreen(),
+        '/Settings': (context) => SettingsScreen(),
         '/DepartmentAnnouncements': (context) => DepartmentAnnouncementsScreen(
               title: currentDepartmentName,
               department: currentDepartment,
@@ -34,7 +59,23 @@ class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
 
   List<Widget> _widgetOptions = <Widget>[
-    HomeTabBar(),
+    FutureBuilder(
+      future: _readDeviceStorage(),
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          return HomeTabBar(
+            _departmentsLength,
+            _tabList,
+            _contentList,
+          );
+        } else if (snapshot.hasError) {
+          return Text("${snapshot.error}");
+        }
+        return Center(
+          child: CircularProgressIndicator(),
+        );
+      },
+    ),
     DepartmentsListView(),
     Contacts(),
   ];
