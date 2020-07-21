@@ -194,7 +194,9 @@ List<Department> _departments = [
     startingLink: 'https://pharmacy.erciyes.edu.tr/',
     titleSelector: 'span.aciklama >  a',
     linkSelector: 'span.aciklama >  a[href]',
-    dateSelector: 'li > span.img > span.yil',
+    dateSelector: 'span.img > span.gun',
+    dateSelector2: 'span.img > span.ay',
+    dateSelector3: 'span.img > span.yil',
   ),
   Department(
     name: 'Edebiyat Fakültesi',
@@ -396,11 +398,13 @@ List<Department> _departments = [
   Department(
     name: 'Turizm Fakültesi',
     type: DepartmentTypes.FakulteTurizm,
-    url: 'http://turizm.erciyes.edu.tr/duyurulist.asp',
+    url: 'https://turizm.erciyes.edu.tr',
     startingLink: 'http://turizm.erciyes.edu.tr/',
-    titleSelector: 'div.duyurukutu > a',
-    linkSelector: 'div.duyurukutu > a[href]',
-    dateSelector: 'div.duyurukutu > div.duyurutarih',
+    titleSelector: 'li > span.aciklama > a',
+    linkSelector: 'li > span.aciklama > a[href]',
+    dateSelector: 'span.img > span.gun',
+    dateSelector2: 'span.img > span.ay',
+    dateSelector3: 'span.img > span.yil',
   ),
   Department(
     name: 'Veteriner Fakültesi',
@@ -560,7 +564,17 @@ List<Department> _departments = [
     linkSelector: 'div.container > div.row > div > a[href]',
     dateSelector: 'div.container > div.row > div > span',
   ),
+  Department(
+    name: 'Öğrenci İşleri',
+    type: DepartmentTypes.OgrenciIsleriDaireBaskanligi,
+    url: 'https://ogrisl.erciyes.edu.tr',
+    startingLink: '',
+    titleSelector: 'div.DuyuruSatirlar > ul > li > a',
+    linkSelector: 'div.DuyuruSatirlar > ul > li > a[href]',
+    dateSelector: 'div.DuyuruSatirlar > ul > li > i',
+  ),
   /* Department(
+    name: '',
     type: DepartmentTypes.Erasmus,
     url: '',
     startingLink: '',
@@ -625,4 +639,5 @@ enum DepartmentTypes {
   Mevlana,
   Farabi,
   AnasayfaErciyesUniversitesi,
+  OgrenciIsleriDaireBaskanligi,
 }

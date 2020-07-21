@@ -1,5 +1,6 @@
 export 'package:flutter/material.dart';
 export 'package:anons/services/html_parser.dart';
+export 'package:shared_preferences/shared_preferences.dart';
 
 export 'utilities/constants.dart';
 

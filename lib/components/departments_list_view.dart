@@ -6,7 +6,6 @@ import 'package:anons/components/departments_expansion_tile.dart';
 
 //TO DO
 /* *IIBF -> Türkçe Karakter sorunu
-   *Turizm Fakültesi -> Türkçe karakter sorunu.
    *Eğitim Bilimleri Enstitüsü -> Türkçe karakter sorunu.
    *Güzel Sanatlar -> Duyuru, haber, etkinlikleri çekiyor.
    *Sağlık Bilimleri Ens. -> Tr karakter sorunu ve hatalı duyuru.
@@ -563,24 +562,36 @@ class DepartmentsListView extends StatelessWidget {
         ),
         ListTileCard(
           paddingState: false,
-          title: "Obisis Duyuruları",
-          onTap: () {
-            _showAnnouncements(
-              "Obisis Duyuruları",
-              Department.getDepartmentInstance(
-                DepartmentTypes.Obisis,
-              ),
-            );
-          },
-        ),
-        ListTileCard(
-          paddingState: false,
           title: "Erciyes Üniversitesi Anasayfası",
           onTap: () {
             _showAnnouncements(
               "Erciyes Üni. Anasayfası",
               Department.getDepartmentInstance(
                 DepartmentTypes.AnasayfaErciyesUniversitesi,
+              ),
+            );
+          },
+        ),
+        ListTileCard(
+          paddingState: false,
+          title: "Öğrenci İşleri",
+          onTap: () {
+            _showAnnouncements(
+              "Öğrenci İşleri",
+              Department.getDepartmentInstance(
+                DepartmentTypes.OgrenciIsleriDaireBaskanligi,
+              ),
+            );
+          },
+        ),
+        ListTileCard(
+          paddingState: false,
+          title: "Obisis Duyuruları",
+          onTap: () {
+            _showAnnouncements(
+              "Obisis Duyuruları",
+              Department.getDepartmentInstance(
+                DepartmentTypes.Obisis,
               ),
             );
           },

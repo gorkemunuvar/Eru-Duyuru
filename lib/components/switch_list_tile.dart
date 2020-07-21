@@ -1,7 +1,7 @@
 import 'package:anons/index.dart';
 import 'package:flutter/material.dart';
 
-class SwitchListTileCard extends StatelessWidget {
+class SwitchListTileCard extends StatefulWidget {
   final String title;
   final bool paddingState;
   final bool isSwitched;
@@ -15,16 +15,21 @@ class SwitchListTileCard extends StatelessWidget {
   });
 
   @override
+  _SwitchListTileCardState createState() => _SwitchListTileCardState();
+}
+
+class _SwitchListTileCardState extends State<SwitchListTileCard> {
+  @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: paddingState == null
+      padding: widget.paddingState == null
           ? EdgeInsets.symmetric(horizontal: 15.0)
           : EdgeInsets.zero,
       child: Card(
         child: _CustomSwitchListTile(
-          title: title,
-          isSwitched: isSwitched,
-          onChanged: onChanged,
+          title: widget.title,
+          isSwitched: widget.isSwitched,
+          onChanged: widget.onChanged,
         ),
       ),
     );
@@ -67,7 +72,10 @@ class __CustomSwitchListTileState extends State<_CustomSwitchListTile> {
       title: Text(title),
       value: isSwitched,
       onChanged: (bool value) {
-        onChanged();
+        setState(() {
+          value = isSwitched;
+          onChanged();
+        });
       },
     );
   }

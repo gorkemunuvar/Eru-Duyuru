@@ -1,5 +1,4 @@
 import 'index.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 void main() => runApp(MyApp());
 
@@ -39,6 +38,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => HomeScreen(),
         '/Settings': (context) => SettingsScreen(),
+        //'/TestScreen': (context) => TestScreen(),
         '/DepartmentAnnouncements': (context) => DepartmentAnnouncementsScreen(
               title: currentDepartmentName,
               department: currentDepartment,
