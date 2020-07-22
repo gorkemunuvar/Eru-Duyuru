@@ -26,7 +26,9 @@ Future getAnnouncements(Department department) async {
 
       List<Element> titles =
           document.querySelectorAll(department.titleSelector);
-      List<Element> links = document.querySelectorAll(department.linkSelector);
+      List<Element> links = department.linkSelector == null
+          ? List<Element>()
+          : document.querySelectorAll(department.linkSelector);
       List<Element> dates = List<Element>();
       List<Element> dates2 = List<Element>();
       List<Element> dates3 = List<Element>();
@@ -51,7 +53,7 @@ Future getAnnouncements(Department department) async {
       //İlgili bölüme ait duyuru yoksa
       if (titles.length == 0) {
         Announcement newAnnouncement = Announcement(
-          title: "Malesef duyuru bulamadık. :/",
+          title: "Malesef duyuru bulunamadı. :/",
           link: "--",
           date: "--",
         );
@@ -67,8 +69,11 @@ Future getAnnouncements(Department department) async {
         for (int i = 0; i < boundary; i++) {
           if (i == 10) break;
 
-          String link = pageLink + links[i].text.trim();
           String date = '';
+
+          String link = department.linkSelector == null
+              ? department.url
+              : pageLink + links[i].attributes["href"].trim();
 
           if (department.dateSelector != null) {
             date = dates[i].text.trim();

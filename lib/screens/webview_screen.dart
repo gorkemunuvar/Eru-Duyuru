@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
+import 'package:anons/utilities/constants.dart';
 
 class WebViewScreen extends StatelessWidget {
   final String initialUrl;
@@ -8,9 +9,16 @@ class WebViewScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return WebView(
-      initialUrl: "https://bm.erciyes.edu.tr/index.asp?DuyuruID=291",
-      javascriptMode: JavascriptMode.unrestricted,
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: kAppBarColor,
+        title: Text("Duyuru Sayfası"),
+        //Settings Icon
+      ),
+      body: WebView(
+        initialUrl: initialUrl,
+        javascriptMode: JavascriptMode.unrestricted,
+      ),
     );
   }
 }

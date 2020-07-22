@@ -33,7 +33,7 @@ class AnnouncementListTile extends StatelessWidget {
         ),
         trailing: Icon(Icons.keyboard_arrow_right),
         onTap: () {
-          print("\n$link\n");
+          print("\n${link}\n");
 
           Navigator.push(
             context,

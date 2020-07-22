@@ -233,10 +233,6 @@ class SettingsScreen extends StatelessWidget {
                 ),
                 SwitchListTileCard(
                   paddingState: false,
-                  title: "Mevlana Duyuruları",
-                ),
-                SwitchListTileCard(
-                  paddingState: false,
                   title: "Farabi Duyuruları",
                 ),
               ],

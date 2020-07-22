@@ -9,7 +9,7 @@ import 'package:anons/components/departments_expansion_tile.dart';
    *Eğitim Bilimleri Enstitüsü -> Türkçe karakter sorunu.
    *Güzel Sanatlar -> Duyuru, haber, etkinlikleri çekiyor.
    *Sağlık Bilimleri Ens. -> Tr karakter sorunu ve hatalı duyuru.
-   *Mevlana Duyuruları -> Redirect loop detected.
+   *Mevlana Duyuruları -> Redirect loop detected.(Daha sonra ekle)
  */
 
 class DepartmentsListView extends StatelessWidget {
@@ -604,18 +604,6 @@ class DepartmentsListView extends StatelessWidget {
               "Erasmus Duyuruları",
               Department.getDepartmentInstance(
                 DepartmentTypes.Erasmus,
-              ),
-            );
-          },
-        ),
-        ListTileCard(
-          paddingState: false,
-          title: "Mevlana Duyuruları",
-          onTap: () {
-            _showAnnouncements(
-              "Mevlana Duyuruları",
-              Department.getDepartmentInstance(
-                DepartmentTypes.Mevlana,
               ),
             );
           },
