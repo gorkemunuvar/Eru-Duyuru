@@ -1,28 +1,54 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
-class CustomListTile extends StatelessWidget {
-  CustomListTile(
-      {@required this.name, @required this.email, @required this.phoneNumber});
+class ContactListTile extends StatelessWidget {
+  ContactListTile(
+      {@required this.name, this.email, this.phoneNumber, this.department});
 
   final String name;
   final String email;
   final String phoneNumber;
+  final String department;
 
   @override
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
+        dense: true,
         contentPadding: EdgeInsets.all(15.0),
-        title: Text(
-          name,
-          style: TextStyle(
-            fontSize: 16.0,
-            fontWeight: FontWeight.bold,
+        title: Padding(
+          padding: const EdgeInsets.only(bottom: 5.0),
+          child: Text(
+            name,
+            style: TextStyle(
+              fontSize: 16.0,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
-        subtitle: Text('$phoneNumber\n$email'),
-        trailing: Icon(Icons.keyboard_arrow_right),
-        onTap: () {},
+        subtitle: Text(
+          '${department}\n${email}\n${phoneNumber}',
+          style: TextStyle(fontSize: 13.0),
+        ),
+        trailing: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            IconButton(
+              icon: Icon(Icons.mail_outline),
+              color: Colors.red[300],
+              iconSize: 25.0,
+              onPressed: () {
+                Clipboard.setData(ClipboardData(text: email));
+              },
+            ),
+            IconButton(
+              icon: Icon(Icons.phone),
+              color: Colors.green[700],
+              iconSize: 25.0,
+              onPressed: () {},
+            ),
+          ],
+        ),
       ),
     );
   }

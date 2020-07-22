@@ -1,4 +1,5 @@
 import 'index.dart';
+import 'screens/test_contact_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => HomeScreen(),
         '/Settings': (context) => SettingsScreen(),
-        //'/TestScreen': (context) => TestScreen(),
+        '/TestContacts': (context) => TestContacts(),
         '/DepartmentAnnouncements': (context) => DepartmentAnnouncementsScreen(
               title: currentDepartmentName,
               department: currentDepartment,
@@ -77,7 +78,8 @@ class _HomeScreenState extends State<HomeScreen> {
       },
     ),
     DepartmentsListView(),
-    Contacts(),
+    //Contacts(),
+    TestContacts(),
   ];
 
   void _onItemTapped(int index) {

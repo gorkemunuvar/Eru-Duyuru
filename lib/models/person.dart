@@ -1,7 +1,7 @@
-class People {
+class Person {
   final String name;
   final String email;
   final String phoneNumber;
 
-  People(this.name, this.email, this.phoneNumber);
+  Person(this.name, this.email, this.phoneNumber);
 }

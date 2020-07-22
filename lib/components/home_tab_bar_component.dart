@@ -25,6 +25,7 @@ DefaultTabController HomeTabBar(
           Expanded(
             child: Container(
               height: 80.0,
+              color: Colors.white,
               child: TabBarView(
                 children: length == 0
                     ? [
