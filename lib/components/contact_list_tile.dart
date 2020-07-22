@@ -39,6 +39,7 @@ class ContactListTile extends StatelessWidget {
               iconSize: 25.0,
               onPressed: () {
                 Clipboard.setData(ClipboardData(text: email));
+                _showToast(context);
               },
             ),
             IconButton(
@@ -52,4 +53,17 @@ class ContactListTile extends StatelessWidget {
       ),
     );
   }
+}
+
+void _showToast(BuildContext context) {
+  final scaffold = Scaffold.of(context);
+  scaffold.showSnackBar(
+    SnackBar(
+      duration: Duration(milliseconds: 1000),
+      content: const Text(
+        'Email panoya kopyalandı.',
+        textAlign: TextAlign.center,
+      ),
+    ),
+  );
 }

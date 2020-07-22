@@ -1,0 +1,53 @@
+{
+    "people": [
+        {
+            "name": "Prof. Dr. Derviş Karaboğa",
+            "email": "karaboga@erciyes.edu.tr",
+            "phone": "32577",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Bahriye Akay",
+            "email": "bahriye@erciyes.edu.tr",
+            "phone": "32578",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Celal Öztürk",
+            "email": "celal@erciyes.edu.tr",
+            "phone": "32581",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Özkan Ufuk Nalbantoğlu",
+            "email": "nalbantoglu@erciyes.edu.tr",
+            "phone": "32585",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Ömür Şahin",
+            "email": "omur@erciyes.edu.tr",
+            "phone": "32584",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Demet Alıcı Karaca",
+            "email": "demet.karaca@erciyes.edu.tr",
+            "phone": "32582",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Ceylan Bozoğullarından",
+            "email": "cboz@erciyes.edu.tr",
+            "phone": "32583",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        }
+    ]
+}

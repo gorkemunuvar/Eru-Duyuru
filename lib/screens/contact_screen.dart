@@ -1,4 +1,4 @@
-import '../models/person.dart';
+/* import '../models/person.dart';
 import '../components/contact_list_tile.dart';
 import 'package:flutter/material.dart';
 
@@ -40,3 +40,4 @@ class Contacts extends StatelessWidget {
     );
   }
 }
+ */
