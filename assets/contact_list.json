@@ -48,6 +48,2113 @@
             "phone": "32583",
             "department": "Bilgisayar Mühendisliği",
             "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Damla Coşkun",
+            "email": "damlacoskun@erciyes.edu.tr",
+            "phone": "32579",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Alper Baştürk",
+            "email": "ab@erciyes.edu.tr",
+            "phone": "32552",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Selçuk Ökdem",
+            "email": "okdem@erciyes.edu.tr",
+            "phone": "32527",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Bilal Babayiğit",
+            "email": "bilalb@erciyes.edu.tr",
+            "phone": "32553",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Serkan Öztürk",
+            "email": "ozturks@erciyes.edu.tr",
+            "phone": "32551",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Dr. Tayyip Özcan",
+            "email": "tozcan@erciyes.edu.tr",
+            "phone": "32554",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Ertuğrul Gül",
+            "email": "ertugrulgul@erciyes.edu.tr",
+            "phone": "32555",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Veysel Aslantaş",
+            "email": "aslantas@erciyes.edu.tr",
+            "phone": "32602",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Mete Çelik",
+            "email": "mcelik@erciyes.edu.tr",
+            "phone": "32530",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Beyza Görkemli",
+            "email": "bgorkemli@erciyes.edu.tr",
+            "phone": "32604",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Ahmet Nusret Toprak",
+            "email": "antoprak@erciyes.edu.tr",
+            "phone": "32601",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Fatma Özge Özkök",
+            "email": "fozgeozkok@erciyes.edu.tr",
+            "phone": "32603",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Meryem Altın Karagöz",
+            "email": "makaragoz@erciyes.edu.tr",
+            "phone": "32605",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Asiye Ulaş",
+            "email": "asiyeulas@erciyes.edu.tr",
+            "phone": "32606",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Mehmet Elmacı",
+            "email": "mehmetelmaci@erciyes.edu.tr",
+            "phone": "32607",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Hüseyin Özkaya",
+            "email": "huseyinozkaya@erciyes.edu.tr",
+            "phone": "32608",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Osman Buğra Kahraman",
+            "email": "obkahraman@erciyes.edu.tr",
+            "phone": "32609",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Adem Kalınlı",
+            "email": "kalinlia@erciyes.edu.tr",
+            "phone": "-9138",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Mustafa Danacı",
+            "email": "danaci@erciyes.edu.tr",
+            "phone": "32528",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Fehim Köylü",
+            "email": "fehimkoylu@erciyes.edu.tr",
+            "phone": "32580",
+            "department": "Bilgisayar Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. MAHMUT TOKMAKÇI",
+            "email": "tokmakci@erciyes.edu.tr",
+            "phone": "32980",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. FATMA LATİFOĞLU",
+            "email": "flatifoglu@erciyes.edu.tr",
+            "phone": "32977",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi ÖMER AYDIN",
+            "email": "omeraydin@erciyes.edu.tr",
+            "phone": "32984",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. MEHMET EMİN YÜKSEL",
+            "email": "yuksel@erciyes.edu.tr",
+            "phone": "32976",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. AYŞEGÜL GÜVEN",
+            "email": "aguven@erciyes.edu.tr",
+            "phone": "32979",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. SEMRA İÇER",
+            "email": "ksemra@erciyes.edu.tr",
+            "phone": "32978",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi GÜLŞEN AKDOĞAN",
+            "email": "akdogang@erciyes.edu.tr",
+            "phone": "32982",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi MEHMET ÇAĞRI SOYLU",
+            "email": "mcsoylu@erciyes.edu.tr",
+            "phone": "32988",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi ŞERİFE GENGEÇ BENLİ",
+            "email": "serifegengec@erciyes.edu.tr",
+            "phone": "32985",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi YAVUZ NURİ ERTAŞ",
+            "email": "yavuzertas@erciyes.edu.tr",
+            "phone": "32995",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. MİRAY ALTINKAYNAK",
+            "email": "miray@erciyes.edu.tr",
+            "phone": "32981",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Dr.TURGAY BATBAT",
+            "email": "turgaybatbat@erciyes.edu.tr",
+            "phone": "32987",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. ÇİĞDEM GÜLÜZAR ALTINTOP",
+            "email": "cigdemacer@erciyes.edu.tr",
+            "phone": "32989",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Ö. BURAK İSTANBULLU",
+            "email": "burakistanbullu@erciyes.edu.tr",
+            "phone": "32990",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. FATMA UYSAL ÇİLOĞLU",
+            "email": "fatmauysal@erciyes.edu.tr",
+            "phone": "32983",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. EDA DAĞDEVİR",
+            "email": "edakaracaoglan@erciyes.edu.tr",
+            "phone": "32993",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. MEHMET FATİH KARAKAŞ",
+            "email": "mfkarakas@erciyes.edu.tr",
+            "phone": "32992",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. MELİS TOKMAK",
+            "email": "meliskeskin@erciyes.edu.tr",
+            "phone": "32991",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Cansu Ümran Tunç",
+            "email": "cansuumrantunc@erciyes.edu.tr",
+            "phone": "",
+            "department": "Biyomedikal Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Oktay  ÖZKAN",
+            "email": "ozkan@erciyes.edu.tr",
+            "phone": "7369",
+            "department": "Çevre Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Filiz  DADAŞER ÇELİK",
+            "email": "fdadaser@erciyes.edu.tr",
+            "phone": "7371",
+            "department": "Çevre Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Ömür GÖKKUŞ",
+            "email": "omurgokkus@erciyes.edu.tr",
+            "phone": "7512",
+            "department": "Çevre Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Evrim  KARAÇETİN",
+            "email": "ekaracetin@erciyes.edu.tr",
+            "phone": "7519",
+            "department": "Çevre Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi İbrahim UYANIK",
+            "email": "iuyanik@erciyes.edu.tr",
+            "phone": "7498",
+            "department": "Çevre Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Merve TEMİZYÜREK ARSLAN",
+            "email": "mtemizyurek@erciyes.edu.tr",
+            "phone": "7488",
+            "department": "Çevre Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Şeyma AYDIN",
+            "email": "seyma.aydin@erciyes.edu.tr",
+            "phone": "7360",
+            "department": "Çevre Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Yalçın Şevki  YILDIZ",
+            "email": "yyildiz@erciyes.edu.tr",
+            "phone": "7300",
+            "department": "Çevre Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Merve OĞUZ",
+            "email": "merveoguz@erciyes.edu.tr",
+            "phone": "7327",
+            "department": "Çevre Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Nuray ATEŞ",
+            "email": "nuraya@erciyes.edu.tr        ",
+            "phone": "7452",
+            "department": "Çevre Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Hamdi  MIHÇIOKUR",
+            "email": "hamdi@erciyes.edu.tr",
+            "phone": "7496",
+            "department": "Çevre Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Şükrü Taner AZGIN",
+            "email": "stazgin@erciyes.edu.tr",
+            "phone": "7582",
+            "department": "Çevre Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Dilşad ÖZTÜRK",
+            "email": "dilsadapaydin@erciyes.edu.tr",
+            "phone": "7347",
+            "department": "Çevre Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Mustafa ALÇI",
+            "email": "malci@erciyes.edu.tr",
+            "phone": "32225",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Kenan DANIŞMAN",
+            "email": "danismak@erciyes.edu.tr",
+            "phone": "32226",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Recai KILIÇ",
+            "email": "kilic@erciyes.edu.tr",
+            "phone": "32230",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Enis GÜNAY",
+            "email": "egunay@erciyes.edu.tr",
+            "phone": "32232",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Ahmet Turan ÖZDEMİR",
+            "email": "aturan@erciyes.edu.tr",
+            "phone": "32233",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Öğr. Gör. Dr. Ulvi DAĞDELEN",
+            "email": "dagdelen@erciyes.edu.tr",
+            "phone": "32231",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Ahmet Yasin BARAN",
+            "email": "abaran@erciyes.edu.tr",
+            "phone": "",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Gülnur YILMAZ",
+            "email": "gulnur.yilmaz@erciyes.edu.tr",
+            "phone": "",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Necmi TAŞPINAR",
+            "email": "taspinar@erciyes.edu.tr",
+            "phone": "32201",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Nurhan KARABOĞA",
+            "email": "nurhan_k@erciyes.edu.tr",
+            "phone": "32203",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. İbrahim DEVELİ",
+            "email": "develi@erciyes.edu.tr",
+            "phone": "32205",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Dr. Gökçen ÖZDEMİR",
+            "email": "gozdemir@erciyes.edu.tr",
+            "phone": "32207",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Murat Emre ERKOÇ",
+            "email": "merkoc@erciyes.edu.tr",
+            "phone": "32202",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Burak Kürşat GÜL (ÖYP)",
+            "email": "burak.gul@erciyes.edu.tr",
+            "phone": "32209",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Celal YILDIZ",
+            "email": "yildizc@erciyes.edu.tr",
+            "phone": "32275",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Ömer Galip SARAÇOĞLU",
+            "email": "saracog@erciyes.edu.tr",
+            "phone": "32277",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Mustafa TÜRKMEN",
+            "email": "turkmen@erciyes.edu.tr",
+            "phone": "32278",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Mustafa KIRLAR",
+            "email": "mustafakirlar@erciyes.edu.tr",
+            "phone": "32279",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Kadir Tuğrul BOZKURT",
+            "email": "tugrulbozkurt@erciyes.edu.tr",
+            "phone": "",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Ferhat DALDABAN",
+            "email": "daldaban@erciyes.edu.tr",
+            "phone": "32250",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Nurettin ÜSTKOYUNCU",
+            "email": "nurettinu@erciyes.edu.tr",
+            "phone": "32252",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Aytekin BAĞIŞ",
+            "email": "bagis@erciyes.edu.tr",
+            "phone": "32255",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi İlker DALKIRAN",
+            "email": "ilkerd@erciyes.edu.tr",
+            "phone": "32227",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Hasan ZORLU",
+            "email": "hzorlu@erciyes.edu.tr",
+            "phone": "32253",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Vedat Burak YÜCEDAĞ",
+            "email": "vedatburakyucedag@erciyes.edu.tr",
+            "phone": "32258",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Serkan BAHÇECİ",
+            "email": "sbahceci@erciyes.edu.tr",
+            "phone": "32276",
+            "department": "Elektrik-Elektronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Mithat ZEYDAN",
+            "email": "mzeydan@erciyes.edu.tr",
+            "phone": "32454",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Banu SOYLU",
+            "email": "bsoylu@erciyes.edu.tr",
+            "phone": "32456",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Mehmet Duran TOKSARI",
+            "email": "dtoksari@erciyes.edu.tr",
+            "phone": "32457",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. SİNEM KULLUK",
+            "email": "skulluk@erciyes.edu.tr",
+            "phone": "32452",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. İbrahim DOĞAN",
+            "email": "idogan@erciyes.edu.tr",
+            "phone": "32460",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. HÜLYA TORUN",
+            "email": "hbehret@erciyes.edu.tr",
+            "phone": "32461",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. ERCAN ŞENYİĞİT",
+            "email": "senyigit@erciyes.edu.tr",
+            "phone": "32455",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi FEYZA GÜRBÜZ",
+            "email": "feyza@erciyes.edu.tr",
+            "phone": "32453",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Öğr.Gör. Dr. MUSTAFA DÖRDÜNCÜ",
+            "email": "mdorduncu@erciyes.edu.tr",
+            "phone": "32451",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. GÜLHAN TOĞA",
+            "email": "gpala@erciyes.edu.tr",
+            "phone": "32458",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. BURAK GÜLMEZ",
+            "email": "burakgulmez@erciyes.edu.tr",
+            "phone": "32464",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Ahmet ALÇI",
+            "email": "ahmetalci@erciyes.edu.tr",
+            "phone": "32459",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. İsmail Akargöl",
+            "email": "ismailakargol@erciyes.edu.tr",
+            "phone": "32462",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Lale ÖZBAKIR",
+            "email": "lozbakir@erciyes.edu.tr",
+            "phone": "32475",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Emel KIZILKAYA AYDOĞAN",
+            "email": "ekaydogan@erciyes.edu.tr",
+            "phone": "32481",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. ADEM GÖLEÇ",
+            "email": "ademgolec@erciyes.edu.tr",
+            "phone": "32476",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. SELDA KAPAN ULUSOY",
+            "email": "skapan@erciyes.edu.tr",
+            "phone": "32478",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Pınar Zarif TAPKAN",
+            "email": "pinartan@erciyes.edu.tr",
+            "phone": "",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi LATİFE GÖRKEMLİ",
+            "email": "lgorkemli@erciyes.edu.tr",
+            "phone": "32479",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Mihrimah ÖZMEN",
+            "email": "mihrimah@erciyes.edu.tr",
+            "phone": "",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. BETÜL AYMAN",
+            "email": "betulbenli@erciyes.edu.tr",
+            "phone": "32482",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Berrin ATALAY",
+            "email": "berrinucarkus@erciyes.edu.tr",
+            "phone": "32483",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Salih Himmetoğlu",
+            "email": "salihhimmetoglu@erciyes.edu.tr",
+            "phone": "32480",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. M. MERHAD AY",
+            "email": "merhaday@erciyes.edu.tr",
+            "phone": "32484",
+            "department": "Endüstri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Cem SİNANOĞLU",
+            "email": "csinan@erciyes.edu.tr",
+            "phone": "7437",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Sezai A. TEKİN",
+            "email": "satekin@erciyes.edu.tr",
+            "phone": "7605",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. A. Alper  CERİT",
+            "email": "acerit@erciyes.edu.tr",
+            "phone": "7305",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Bülent KAYA",
+            "email": "bulentkaya@erciyes.edu.tr",
+            "phone": "7366",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Derya HAROĞLU",
+            "email": "dharoglu@erciyes.edu.tr",
+            "phone": "7314",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Fatma Nazlı ÖZSOLAK",
+            "email": "fnsari@erciyes.edu.tr",
+            "phone": "7311",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Özkan ÖZMEN",
+            "email": "ozmen@erciyes.edu.tr",
+            "phone": "7404",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Esra AKGÜL",
+            "email": "akgul@erciyes.edu.tr",
+            "phone": "7365",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Öğr. Gör. Erkan YILMAZ",
+            "email": "erkan@erciyes.edu.tr",
+            "phone": "7594",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Ali İhsan YOĞURT",
+            "email": "ihsan.yogurt@erciyesteknopark.com",
+            "phone": "68333",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Ayşe Polat",
+            "email": "1aysepolat1@gmail.com",
+            "phone": "7308",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Gülen ÖZDEMİR  ",
+            "email": "gozgulen@gmail.com",
+            "phone": "7308",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Levent ÇORUH",
+            "email": "lcoruh@erciyes.edu.tr",
+            "phone": "34202",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Mağfire TİPİ",
+            "email": "magfiretipi@gmail.com",
+            "phone": "7392",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Mehmet Bahadır  ÇETİNKAYA",
+            "email": "cetinkaya@erciyes.edu.tr",
+            "phone": "32208",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Mehmet Emin AYKURT",
+            "email": "aykurt@erciyes.edu.tr",
+            "phone": "34207",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Murat  AYDIN",
+            "email": "aydin@erciyes.edu.tr",
+            "phone": "41178",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Orhan ÇAVUŞ",
+            "email": "cavusorhan38@hotmail.com",
+            "phone": "7320",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Savaş  ÖZTAŞ",
+            "email": "svsozt74@gmail.com",
+            "phone": "7308",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Serdal  KARA",
+            "email": "serdal.kara@isisan.com.tr",
+            "phone": "7308",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Öğr. Gör.Tuna Ferit HİDAYETOĞLU",
+            "email": "tunaf@erciyes.edu.tr",
+            "phone": "7495",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Züleyha Yılmaz SİR",
+            "email": "zuleyhayilmazsir@gmail.com",
+            "phone": "7308",
+            "department": "Endüstriyel Tasarım Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Hüseyin Yapıcı",
+            "email": "yapici@erciyes.edu.tr",
+            "phone": "32310",
+            "department": "Enerji Sistemleri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Gamze Genç",
+            "email": "gamzegenc@erciyes.edu.tr",
+            "phone": "32311",
+            "department": "Enerji Sistemleri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Mustafa Serdar Genç",
+            "email": "musgenc@erciyes.edu.tr",
+            "phone": "32320",
+            "department": "Enerji Sistemleri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Halil Hakan Açıkel",
+            "email": "hhacikel@erciyes.edu.tr",
+            "phone": "32321",
+            "department": "Enerji Sistemleri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Nesrin Kayataş Demir",
+            "email": "nkayatas@erciyes.edu.tr",
+            "phone": "32330",
+            "department": "Enerji Sistemleri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Mehmet Fatih Kaya",
+            "email": "kayamehmetfatih@erciyes.edu.tr",
+            "phone": "32331",
+            "department": "Enerji Sistemleri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. İlayda Yılmaz",
+            "email": "ilaydayilmaz@erciyes.edu.tr",
+            "phone": "32332",
+            "department": "Enerji Sistemleri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Gülşah Elden",
+            "email": "gulsah@erciyes.edu.tr",
+            "phone": "32340",
+            "department": "Enerji Sistemleri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Mert Taş",
+            "email": "merttas@erciyes.edu.tr",
+            "phone": "32341",
+            "department": "Enerji Sistemleri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Saltuk Buğra SELÇUKLU",
+            "email": "sbselcuklu@erciyes.edu.tr",
+            "phone": "32350",
+            "department": "Enerji Sistemleri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Seyfettin Gürel",
+            "email": "sgurel@erciyes.edu.tr",
+            "phone": "32351",
+            "department": "Enerji Sistemleri Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Hasan YALÇIN",
+            "email": "hyalcin@erciyes.edu.tr",
+            "phone": "32731",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Zülal KESMEN",
+            "email": "zkesmen@erciyes.edu.tr",
+            "phone": "32729",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Lütfiye EKİCİ",
+            "email": "lutfiyed@erciyes.edu.tr",
+            "phone": "32727",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Mustafa FİNCAN",
+            "email": "mfincan@erciyes.edu.tr",
+            "phone": "32728",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Oya SİPAHİOĞLU",
+            "email": "osipahioglu@erciyes.edu.tr",
+            "phone": "32734",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Öğr. Gör. Dr. Ahmet Evren YETİMAN",
+            "email": "ahmetyetiman@erciyes.edu.tr",
+            "phone": "32732",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Dr. Tuğba DURSUN ÇAPAR",
+            "email": "tugbadursun@erciyes.edu.tr",
+            "phone": "32735",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. 100/2000 YÖK Bursiyeri Alaeddin TÜRKMEN",
+            "email": "aturkmen@erciyes.edu.tr",
+            "phone": "32733",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. 100/2000 YÖK Bursiyeri Serap BERKTAŞ",
+            "email": "brkts.serap@gmail.com",
+            "phone": "32719",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. 100/2000 YÖK Bursiyeri Cansu İNANIR",
+            "email": "inanircansu0@gmail.com",
+            "phone": "32719",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. 100/2000 YÖK Bursiyeri Esra AVCI",
+            "email": "esraozbekar@hotmail.com",
+            "phone": "32707",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. 100/2000 YÖK Bursiyeri Şeyma AYDIN",
+            "email": "symaa_2006@hotmail.com",
+            "phone": "32707",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. 100/2000 YÖK Bursiyeri Saime Gülsüm BATMAN",
+            "email": "gulsumbatman@yahoo.com",
+            "phone": "32707",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. 100/2000 YÖK Bursiyeri Elif Esra ALACALI",
+            "email": "elif-esra_alacali@hotmail.com",
+            "phone": "32720",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. 100/2000 YÖK Bursiyeri Merve IŞIKLI",
+            "email": "merveisikli38@hotmail.com",
+            "phone": "32720",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Mahmut DOĞAN",
+            "email": "dogan@erciyes.edu.tr",
+            "phone": "32751",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Kemal SARIOĞLU",
+            "email": "sarioglu@erciyes.edu.tr",
+            "phone": "32753",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Mehmet HAYTA",
+            "email": "mhayta@erciyes.edu.tr",
+            "phone": "32755",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Mustafa ÇAM",
+            "email": "mcam@erciyes.edu.tr",
+            "phone": "32757",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Elif Meltem İŞÇİMEN",
+            "email": "eliferen@erciyes.edu.tr",
+            "phone": "32758",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Duygu ASLAN TÜRKER",
+            "email": "duyguaslan@erciyes.edu.tr",
+            "phone": "32752",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Fatıma Tahseen MIANO",
+            "email": "ftmiano@erciyes.edu.tr",
+            "phone": "32716",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Ceyda ÖZCAN",
+            "email": "ceyda.b@erciyes.edu.tr",
+            "phone": "32756",
+            "department": "Gıda Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Abdurrahman EYMEN",
+            "email": "ageymen@erciyes.edu.tr",
+            "phone": "",
+            "department": "Harita Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Ümran KÖYLÜ",
+            "email": "umrank@erciyes.edu.tr",
+            "phone": "",
+            "department": "Harita Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Erkan BEŞDOK",
+            "email": "ebesdok@erciyes.edu.tr",
+            "phone": "",
+            "department": "Harita Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Coşkun ÖZKAN",
+            "email": "cozkan@erciyes.edu.tr",
+            "phone": "6666",
+            "department": "Harita Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Tuba KURBAN",
+            "email": "tubac@erciyes.edu.tr",
+            "phone": "",
+            "department": "Harita Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Dr. Abdullah KARAAĞAÇ",
+            "email": "akaraagac@erciyes.edu.tr",
+            "phone": "7405",
+            "department": "Harita Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Bülent BOSTANCI",
+            "email": "bbostanci@erciyes.edu.tr",
+            "phone": "",
+            "department": "Harita Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Talha TAŞKANAT",
+            "email": "talhataskanat@erciyes.edu.tr",
+            "phone": "7367",
+            "department": "Harita Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Ümit Haluk ATASEVER",
+            "email": "uhatasever@erciyes.edu.tr",
+            "phone": "7406",
+            "department": "Harita Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Nihal TEKİN ÜNLÜTÜRK",
+            "email": "nihaltekin@erciyes.edu.tr",
+            "phone": "7600",
+            "department": "Harita Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Mehmet Akif GÜNEN",
+            "email": "akif@erciyes.edu.tr",
+            "phone": "",
+            "department": "Harita Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Tolga KAYNAK",
+            "email": "tolgakaynak@erciyes.edu.tr",
+            "phone": "",
+            "department": "Harita Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Fatih ALTUN",
+            "email": "faltun@erciyes.edu.tr",
+            "phone": "7601",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Cengiz Duran ATİŞ",
+            "email": "cdatis@erciyes.edu.tr",
+            "phone": "7372",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr.Okan KARAHAN",
+            "email": "okarahan@erciyes.edu.tr",
+            "phone": "7510",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Savaş BAYRAM",
+            "email": "sbayram@erciyes.edu.tr",
+            "phone": "7526",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Hidayet ÖZDEMİR",
+            "email": "hozdemir@erciyes.edu.tr",
+            "phone": "7604",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Müslüm KILINÇ",
+            "email": "kilinc@erciyes.edu.tr",
+            "phone": "7556",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Tamer DİRİKGİL",
+            "email": "dirikgil@erciyes.edu.tr",
+            "phone": "7413",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Oğuz DÜĞENCİ",
+            "email": "dugenci@erciyes.edu.tr",
+            "phone": "7323",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Serhan İLKENTAPAR",
+            "email": "serhan@erciyes.edu.tr",
+            "phone": "7324",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Ahmet ÖZBAYRAK",
+            "email": "ozbayrak@erciyes.edu.tr",
+            "phone": "0000",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Dr. Uğur DURAK",
+            "email": "ugurdurak@erciyes.edu.tr",
+            "phone": "7346",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Yüksel GÜL",
+            "email": "yukselgul@erciyes.edu.tr",
+            "phone": "7470",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Hüseyin Hilmi  ASLANBAY",
+            "email": "aslanbay@erciyes.edu.tr",
+            "phone": "7564",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Ahmet Alper ÖNER",
+            "email": "alperoner@erciyes.edu.tr",
+            "phone": "7427",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Hatice ÇITAKOĞLU",
+            "email": "hcitakoglu@erciyes.edu.tr",
+            "phone": "7515",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Levent LATİFOĞLU",
+            "email": "latifoglu@erciyes.edu.tr",
+            "phone": "7410",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Öğr. Gör. Dr. Neşe HAKTANIR",
+            "email": "nhaktan@erciyes.edu.tr",
+            "phone": "7428",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Mücella İLKENTAPAR",
+            "email": "mucella@erciyes.edu.tr",
+            "phone": "7359",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Erdal UNCUOĞLU",
+            "email": "erdalu@erciyes.edu.tr",
+            "phone": "7511",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Zülküf KAYA",
+            "email": "zkaya@erciyes.edu.tr",
+            "phone": "7623",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Hacı Bekir KARA",
+            "email": "hbkara@erciyes.edu.tr",
+            "phone": "7439",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Aykut EROL",
+            "email": "aykuterol@erciyes.edu.tr",
+            "phone": "7438",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Bekir  AKTAŞ",
+            "email": "baktas@erciyes.edu.tr",
+            "phone": "7353",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Dr. Şevket ASLAN",
+            "email": "sevketaslan@erciyes.edu.tr",
+            "phone": "7381",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Öğr. Gör. Dr. Murat KÖMÜRCÜ",
+            "email": "mkomurcu@erciyes.edu.tr",
+            "phone": "7465",
+            "department": "İnşaat Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Mustafa Kemal APALAK",
+            "email": "apalakmk@erciyes.edu.tr",
+            "phone": "32150",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Zeynep Gül APALAK",
+            "email": "apalakz@erciyes.edu.tr",
+            "phone": "32152",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Recep GÜNEŞ",
+            "email": "recepg@erciyes.edu.tr",
+            "phone": "32153",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Recep EKİCİ",
+            "email": "rekici@erciyes.edu.tr",
+            "phone": "32154",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Munise Didem DEMİRBAŞ",
+            "email": "mddemirbas@erciyes.edu.tr",
+            "phone": "32156",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Mehmet DÖRDÜNCÜ",
+            "email": "dorduncu@erciyes.edu.tr",
+            "phone": "32157",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Umut ÇALIŞKAN",
+            "email": "ucaliskan@erciyes.edu.tr",
+            "phone": "32155",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Kemal ARSLAN",
+            "email": "karslan@erciyes.edu.tr",
+            "phone": "32162",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Mevlüt HAKAN",
+            "email": "mevluthakan@erciyes.edu.tr",
+            "phone": "32160",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Muhsin ALÇI",
+            "email": "muhsinalci@erciyes.edu.tr",
+            "phone": "32158",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Ertan KÖSEDAĞ",
+            "email": "ekosedag@erciyes.edu.tr",
+            "phone": "32161",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Mehmet  OĞUZHAN",
+            "email": "mehmetoguzhan@erciyes.edu.tr",
+            "phone": "32159",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. İbrahim UZMAY",
+            "email": "iuzmay@erciyes.edu.tr",
+            "phone": "32050",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Hamdi TAPLAK",
+            "email": "htaplak@erciyes.edu.tr",
+            "phone": "32053",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Şükrü SU",
+            "email": "su@erciyes.edu.tr",
+            "phone": "32052",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Öğr. Gör. Dr. Hürvet SARIKAYA",
+            "email": "sarikaya@erciyes.edu.tr",
+            "phone": "32054",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Çağlar SEVİM",
+            "email": "caglarsevim@erciyes.edu.tr",
+            "phone": "32059",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Ömer Faruk  ERGİN",
+            "email": "omer@erciyes.edu.tr",
+            "phone": "32055",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Mehmet Baki KARAMIŞ",
+            "email": "karamisb@erciyes.edu.tr",
+            "phone": "32075",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Sedat ÖZDEN",
+            "email": "ozden@erciyes.edu.tr",
+            "phone": "32151",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Eyyup GERÇEKÇİOĞLU",
+            "email": "gercek@erciyes.edu.tr",
+            "phone": "32083",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Fehmi NAİR",
+            "email": "fnair@erciyes.edu.tr",
+            "phone": "32084",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Şengül DANIŞMAN",
+            "email": "sdanisman@erciyes.edu.tr",
+            "phone": "32082",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Durmuş ODABAŞ",
+            "email": "odabasd@erciyes.edu.tr",
+            "phone": "32079",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Fazıl CANBULUT",
+            "email": "canbulut@erciyes.edu.tr",
+            "phone": "32078",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Şaban Murat ÜNLÜ",
+            "email": "smunlu@erciyes.edu.tr",
+            "phone": "32076",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Öğr. Gör. Faruk CANBULUT",
+            "email": "fcanbulut@erciyes.edu.tr",
+            "phone": "32087",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Öğr. Gör. Ercan GÖKŞEN",
+            "email": "egoksen@erciyes.edu.tr",
+            "phone": "32091",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Abdullah GÖÇER",
+            "email": "abdullahgocer@erciyes.edu.tr",
+            "phone": "32080",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Ömer Barışkan YASAN",
+            "email": "omeryasan@erciyes.edu.tr",
+            "phone": "32081",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Emin ERSOY",
+            "email": "eminersoy@erciyes.edu.tr",
+            "phone": "32088",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Necdet ALTUNTOP",
+            "email": "altuntop@erciyes.edu.tr",
+            "phone": "32102",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Veysel ÖZCEYHAN",
+            "email": "ozceyhan@erciyes.edu.tr",
+            "phone": "32108",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Sibel GÜNEŞ",
+            "email": "sgumus@erciyes.edu.tr",
+            "phone": "32106",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Gürsel ÇINAR",
+            "email": "gcinar@erciyes.edu.tr",
+            "phone": "32103",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Serpil ÖZKILIÇ",
+            "email": "skilic@erciyes.edu.tr",
+            "phone": "32101",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Yusuf TEKİN",
+            "email": "ytekin@erciyes.edu.tr",
+            "phone": "32105",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Doğan ERDEMİR",
+            "email": "erdemir@erciyes.edu.tr",
+            "phone": "32111",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Grv. Dr. Orhan KEKLİKCİOĞLU",
+            "email": "keklikcioglu@erciyes.edu.tr",
+            "phone": "32110",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş.Grv. Buket TURGUT",
+            "email": "bcinar@erciyes.edu.tr",
+            "phone": "32112",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş.Grv. Toygun DAĞDEVİR",
+            "email": "toygun@erciyes.edu.tr",
+            "phone": "32109",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Sebahattin ÜNALAN",
+            "email": "s-unalan@erciyes.edu.tr",
+            "phone": "32126",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. S. Orhan AKANSU",
+            "email": "akansu@erciyes.edu.tr",
+            "phone": "32129",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Abdulaziz MOHAMED ATABANI",
+            "email": "aeatabani@gmail.com",
+            "phone": "16505",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş.Grv. Hüseyin Enes FİL",
+            "email": "h.enesfil@erciyes.edu.tr",
+            "phone": "32140",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş.Grv. Süleyman TEKŞIN",
+            "email": "steksin@erciyes.edu.tr",
+            "phone": "32131",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş.Grv. Caner ŞİMŞEK",
+            "email": "canersimsek@erciyes.edu.tr",
+            "phone": "",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Recep KILIK",
+            "email": "rkilik@erciyes.edu.tr",
+            "phone": "",
+            "department": "Makine Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Mustafa Serdar ÖNSES",
+            "email": "onses@erciyes.edu.tr",
+            "phone": "32939",
+            "department": "Malzeme Bilimi ve Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Bilal DEMİREL",
+            "email": "bilaldemirel@erciyes.edu.tr",
+            "phone": "32933",
+            "department": "Malzeme Bilimi ve Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Soner Savaş",
+            "email": "ssavas@erciyes.edu.tr",
+            "phone": "32932",
+            "department": "Malzeme Bilimi ve Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Esen DAĞAŞAN BULUCU",
+            "email": "edagasan@erciyes.edu.tr",
+            "phone": "32927",
+            "department": "Malzeme Bilimi ve Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Selda TOPÇU ŞENDOĞDULAR",
+            "email": "selda.topcu@erciyes.edu.tr",
+            "phone": "32935",
+            "department": "Malzeme Bilimi ve Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Levent ŞENDOĞDULAR",
+            "email": "lsendogdular@erciyes.edu.tr",
+            "phone": "32943",
+            "department": "Malzeme Bilimi ve Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Arş. Grv. Lemiye ATABEK SAVAŞ",
+            "email": "atabekl@erciyes.edu.tr",
+            "phone": "32926",
+            "department": "Malzeme Bilimi ve Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş.Grv. Nuri Burak KİREMİTLER",
+            "email": "nuriburak@erciyes.edu.tr",
+            "phone": "32940",
+            "department": "Malzeme Bilimi ve Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Arş. Grv. Sami PEKDEMİR",
+            "email": "samipekdemir@erciyes.edu.tr",
+            "phone": "32941",
+            "department": "Malzeme Bilimi ve Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş.Grv. Nusret Çelik",
+            "email": "nusretcelik@erciyes.edu.tr",
+            "phone": "",
+            "department": "Malzeme Bilimi ve Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Fatma Nazlı SARI",
+            "email": "fnsari@erciyes.edu.tr",
+            "phone": "7311",
+            "department": "Malzeme Bilimi ve Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Bülent KURT",
+            "email": "bkurt@nevsehir.edu.tr",
+            "phone": "15009",
+            "department": "Malzeme Bilimi ve Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Cemal ÇARBOĞA",
+            "email": "ccarboga@nevsehir.edu.tr",
+            "phone": "15049",
+            "department": "Malzeme Bilimi ve Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Okt. Ebru ÇITAK",
+            "email": "ecitak@erciyes.edu.tr",
+            "phone": "34254",
+            "department": "Malzeme Bilimi ve Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Ertuğrul ŞAHMETLİOĞLU",
+            "email": "sahmetlioglu@erciyes.edu.tr",
+            "phone": "13812",
+            "department": "Malzeme Bilimi ve Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Eyyüp GERÇEKÇİOĞLU",
+            "email": "gercek@erciyes.edu.tr",
+            "phone": "32083",
+            "department": "Malzeme Bilimi ve Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. İlhan ÖZEN",
+            "email": "iozen@erciyes.edu.tr",
+            "phone": "32902",
+            "department": "Malzeme Bilimi ve Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Şengül DANIŞMAN",
+            "email": "sdanisman@erciyes.edu.tr",
+            "phone": "32082",
+            "department": "Malzeme Bilimi ve Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Şahin YILDIRIM",
+            "email": "sahiny@erciyes.edu.tr",
+            "phone": "32953",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Emir ESİM",
+            "email": "emiresim@erciyes.edu.tr",
+            "phone": "32968",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Dr. Sertaç SAVAŞ",
+            "email": "sertacsavas@erciyes.edu.tr",
+            "phone": "32952",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Şaban ULUS",
+            "email": "sabanulus@erciyes.edu.tr",
+            "phone": "32967",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Mehmet Safa BİNGÖL",
+            "email": "msbingol@erciyes.edu.tr",
+            "phone": "32972",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Muzaffer KANAAN",
+            "email": "mkanaan@erciyes.edu.tr",
+            "phone": "32955",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Rüştü AKAY",
+            "email": "akay@erciyes.edu.tr",
+            "phone": "32956",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Mehmet Bahadır ÇETİNKAYA",
+            "email": "cetinkaya@erciyes.edu.tr",
+            "phone": "32208",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Memduh SUVEREN",
+            "email": "msuveren@erciyes.edu.tr",
+            "phone": "32961",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Mustafa Yusuf  YILDIRIM",
+            "email": "myyildirim@erciyes.edu.tr",
+            "phone": "32973",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. İkbal ESKİ",
+            "email": "ikbal@erciyes.edu.tr",
+            "phone": "32957",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Erdem ARSLAN",
+            "email": "erdemarslan@erciyes.edu.tr",
+            "phone": "32958",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Ahmet KIRNAP",
+            "email": "ahmetkirnap@erciyes.edu.tr",
+            "phone": "32970",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Arş. Gör. Burak ULU",
+            "email": "burakulu@erciyes.edu.tr",
+            "phone": "32971",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Cem   SİNANOĞLU",
+            "email": "csinan@erciyes.edu.tr",
+            "phone": "32085",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Öğr. Gör. Erkan  YILMAZ",
+            "email": "erkan@erciyes.edu.tr",
+            "phone": "-6666",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Fehmi  NAİR",
+            "email": "fnair@erciyes.edu.tr",
+            "phone": "32084",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. İbrahim UZMAY",
+            "email": "iuzmay@erciyes.edu.tr",
+            "phone": "32050",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Kenan DANIŞMAN",
+            "email": "danismak@erciyes.edu.tr",
+            "phone": "32226",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Mehmet Baki  KARAMIŞ",
+            "email": "karamisb@erciyes.edu.tr",
+            "phone": "32075",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Nurettin  ÜSTKOYUNCU",
+            "email": "nurettinu@erciyes.edu.tr",
+            "phone": "32252",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Nurhan  KARABOĞA",
+            "email": "nurhan_k@erciyes.edu.tr",
+            "phone": "32203",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Recai KILIÇ",
+            "email": "kilic@erciyes.edu.tr",
+            "phone": "32230",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Serpil  ÖZKILIÇ",
+            "email": "skilic@erciyes.edu.tr",
+            "phone": "32101",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Şükrü SU",
+            "email": "su@erciyes.edu.tr",
+            "phone": "32052",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Yusuf TEKİN",
+            "email": "ytekin@erciyes.edu.tr",
+            "phone": "32105",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Zeynep Gül APALAK",
+            "email": "apalakz@erciyes.edu.tr",
+            "phone": "32152",
+            "department": "Mekatronik Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Kadir Bilişik",
+            "email": "kbilisik@erciyes.edu.tr",
+            "phone": "32851",
+            "department": "Tekstil Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Nazım Paşayev",
+            "email": "npasayev@erciyes.edu.tr",
+            "phone": "32879",
+            "department": "Tekstil Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. Hüseyin Gazi Türksoy",
+            "email": "hgazi@erciyes.edu.tr",
+            "phone": "32878",
+            "department": "Tekstil Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Oğuz Demiryürek",
+            "email": "demiryurek@erciyes.edu.tr",
+            "phone": "32883",
+            "department": "Tekstil Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Bekir Yıldırım",
+            "email": "bekiryildirim@erciyes.edu.tr",
+            "phone": "32885",
+            "department": "Tekstil Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Emel Çinçik",
+            "email": "emelcincik@erciyes.edu.tr",
+            "phone": "32881",
+            "department": "Tekstil Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Gülhan Erdoğan GÜLER",
+            "email": "gerdogan@erciyes.edu.tr",
+            "phone": "32901",
+            "department": "Tekstil Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Dr. Öğr. Üyesi Sümeyye Üstüntağ",
+            "email": "sumeyyeustuntag@erciyes.edu.tr",
+            "phone": "32886",
+            "department": "Tekstil Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. İsmail Karacan",
+            "email": "ismailkaracan@erciyes.edu.tr",
+            "phone": "32900",
+            "department": "Tekstil Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Prof. Dr. İlhan Özen",
+            "email": "iozen@erciyes.edu.tr",
+            "phone": "32902",
+            "department": "Tekstil Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. M. İbrahim Bahtiyari",
+            "email": "bahtiyari@erciyes.edu.tr",
+            "phone": "32903",
+            "department": "Tekstil Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Mehmet Doğan",
+            "email": "mehmetd@erciyes.edu.tr",
+            "phone": "32904",
+            "department": "Tekstil Mühendisliği",
+            "profession": "Akademik Personel"
+        },
+        {
+            "name": "Doç. Dr. Asım Davulcu",
+            "email": "adavulcu@erciyes.edu.tr",
+            "phone": "32882",
+            "department": "Tekstil Mühendisliği",
+            "profession": "Akademik Personel"
         }
     ]
 }

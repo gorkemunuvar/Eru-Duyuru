@@ -48,7 +48,8 @@ class _TestContactsState extends State<TestContacts> {
     }
 
     people.forEach((person) {
-      if (person.name.toLowerCase().contains(query.toLowerCase()))
+      if (person.name.toLowerCase().contains(query.toLowerCase()) ||
+          person.department.toLowerCase().contains(query.toLowerCase()))
         searchResult.add(person);
     });
 

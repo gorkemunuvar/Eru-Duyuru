@@ -56,7 +56,7 @@ void _showToast(BuildContext context) {
   final scaffold = Scaffold.of(context);
   scaffold.showSnackBar(
     SnackBar(
-      duration: Duration(milliseconds: 1000),
+      duration: Duration(milliseconds: 700),
       content: const Text(
         'Email panoya kopyalandı.',
         textAlign: TextAlign.center,

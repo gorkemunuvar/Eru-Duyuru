@@ -4,6 +4,8 @@ import 'package:anons/components/list_tile_card.dart';
 import 'package:anons/models/department.dart';
 import 'package:anons/components/departments_expansion_tile.dart';
 
+import 'package:anons/services/scrapper.dart';
+
 //TO DO
 /* *IIBF -> Türkçe Karakter sorunu
    *Eğitim Bilimleri Enstitüsü -> Türkçe karakter sorunu.
@@ -27,6 +29,16 @@ class DepartmentsListView extends StatelessWidget {
       color: Colors.white,
       child: ListView(
         children: <Widget>[
+          FlatButton(
+            child: Text("Run parseHtml()"),
+            onPressed: () {
+              Scrapper.parseHtml(
+                "https://mekatronik.erciyes.edu.tr/?Akademik_Kadro",
+                "h5.font-16 > a",
+                "ul.list-block > li",
+              );
+            },
+          ),
           DepartmentsExpansionTile(
             paddingState: false,
             title: "Fakülteler ve Bölümler",
