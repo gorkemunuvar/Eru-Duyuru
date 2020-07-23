@@ -5,21 +5,8 @@ import 'package:flutter/services.dart';
 import 'package:anons/models/person.dart';
 import 'package:anons/components/contact_list_tile.dart';
 
-List<String> duplicateItems = List<String>();
-
-Future<String> _loadFromAsset() async {
-  return await rootBundle.loadString("assets/contact_list.json");
-}
-
-Future parseJson() async {
-  String jsonString = await _loadFromAsset();
-
-  final jsonResponse = jsonDecode(jsonString)['people'] as List;
-  List<Person> people =
-      jsonResponse.map((tagJson) => Person.fromJson(tagJson)).toList();
-
-  for (Person person in people) duplicateItems.add(person.name);
-}
+List<Person> people = List<Person>();
+List<Person> searchResult = List<Person>();
 
 class TestContacts extends StatefulWidget {
   TestContacts({Key key}) : super(key: key);
@@ -31,42 +18,41 @@ class TestContacts extends StatefulWidget {
 class _TestContactsState extends State<TestContacts> {
   TextEditingController editingController = TextEditingController();
 
-  /* List<String> duplicateItems = [
-    "Prof. Dr. Derviş Karaboğa",
-  ]; */
+  Future<String> _loadFromAsset() async {
+    return await rootBundle.loadString("assets/contact_list.json");
+  }
 
-  List<String> items = List<String>();
+  Future<Null> parseJson() async {
+    String jsonString = await _loadFromAsset();
+
+    final jsonResponse = jsonDecode(jsonString)['people'] as List;
+    List<Person> people_list =
+        jsonResponse.map((tagJson) => Person.fromJson(tagJson)).toList();
+
+    people.clear();
+    for (Person person in people_list) people.add(person);
+  }
 
   @override
   void initState() {
-    Future f = parseJson();
-    f.then((value) {
-      items.addAll(duplicateItems);
-      super.initState();
-    });
+    super.initState();
+    parseJson();
   }
 
-  void filterSearchResults(String query) {
-    List<String> dummySearchList = List<String>();
-    dummySearchList.addAll(duplicateItems);
-    if (query.isNotEmpty) {
-      List<String> dummyListData = List<String>();
-      dummySearchList.forEach((item) {
-        if (item.contains(query)) {
-          dummyListData.add(item);
-        }
-      });
-      setState(() {
-        items.clear();
-        items.addAll(dummyListData);
-      });
+  void filterSearchResults(String query) async {
+    searchResult.clear();
+
+    if (query.isEmpty) {
+      setState(() {});
       return;
-    } else {
-      setState(() {
-        items.clear();
-        items.addAll(duplicateItems);
-      });
     }
+
+    people.forEach((person) {
+      if (person.name.toLowerCase().contains(query.toLowerCase()))
+        searchResult.add(person);
+    });
+
+    setState(() {});
   }
 
   @override
@@ -105,21 +91,24 @@ class _TestContactsState extends State<TestContacts> {
                   ),
                 ),
                 Expanded(
-                  child: ListView.builder(
-                    shrinkWrap: true,
-                    itemCount: items.length,
-                    itemBuilder: (context, index) {
-                      return ContactListTile(
-                        name: "${items[index]}",
-                        email: 'karaboga@erciyes.edu.tr',
-                        phoneNumber: "Dahili No: 303132",
-                        department: "Bilgisayar Mühendisliği",
-                      );
-                      /* return ListTile(
-                      title: Text('${items[index]}'),
-                    ); */
-                    },
-                  ),
+                  child: searchResult.length != 0 ||
+                          editingController.text.isNotEmpty
+                      ? ListView.builder(
+                          shrinkWrap: true,
+                          itemCount: searchResult.length,
+                          itemBuilder: (context, i) {
+                            return ContactListTile(
+                              person: searchResult[i],
+                            );
+                          },
+                        )
+                      : ListView.builder(
+                          shrinkWrap: true,
+                          itemCount: people.length,
+                          itemBuilder: (context, i) {
+                            return ContactListTile(person: people[i]);
+                          },
+                        ),
                 ),
               ],
             ),
@@ -128,15 +117,4 @@ class _TestContactsState extends State<TestContacts> {
       },
     );
   }
-}
-
-void _showToast(BuildContext context) {
-  final scaffold = Scaffold.of(context);
-  scaffold.showSnackBar(
-    SnackBar(
-      content: const Text('Added to favorite'),
-      action: SnackBarAction(
-          label: 'UNDO', onPressed: scaffold.hideCurrentSnackBar),
-    ),
-  );
 }

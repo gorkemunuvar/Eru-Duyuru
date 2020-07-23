@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:anons/models/person.dart';
 
 class ContactListTile extends StatelessWidget {
-  ContactListTile(
-      {@required this.name, this.email, this.phoneNumber, this.department});
+  ContactListTile({@required this.person});
 
-  final String name;
-  final String email;
-  final String phoneNumber;
-  final String department;
+  final Person person;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +16,7 @@ class ContactListTile extends StatelessWidget {
         title: Padding(
           padding: const EdgeInsets.only(bottom: 5.0),
           child: Text(
-            name,
+            person.name,
             style: TextStyle(
               fontSize: 16.0,
               fontWeight: FontWeight.bold,
@@ -27,7 +24,7 @@ class ContactListTile extends StatelessWidget {
           ),
         ),
         subtitle: Text(
-          '${department}\n${email}\n${phoneNumber}',
+          '${person.department}\n${person.email}\nDahili Numara: ${person.phone}',
           style: TextStyle(fontSize: 13.0),
         ),
         trailing: Row(
@@ -38,7 +35,7 @@ class ContactListTile extends StatelessWidget {
               color: Colors.red[300],
               iconSize: 25.0,
               onPressed: () {
-                Clipboard.setData(ClipboardData(text: email));
+                Clipboard.setData(ClipboardData(text: person.email));
                 _showToast(context);
               },
             ),
