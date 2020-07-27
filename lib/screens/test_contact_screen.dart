@@ -95,6 +95,7 @@ class _TestContactsState extends State<TestContacts> {
                   child: searchResult.length != 0 ||
                           editingController.text.isNotEmpty
                       ? ListView.builder(
+                          scrollDirection: Axis.vertical,
                           shrinkWrap: true,
                           itemCount: searchResult.length,
                           itemBuilder: (context, i) {

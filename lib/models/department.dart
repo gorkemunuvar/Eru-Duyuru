@@ -571,6 +571,14 @@ List<Department> _departments = [
     linkSelector: 'div.DuyuruSatirlar > ul > li > a',
     dateSelector: 'div.DuyuruSatirlar > ul > li > i',
   ),
+  Department(
+    name: 'Eruzem',
+    type: DepartmentTypes.Eruzem,
+    url: 'http://eruzem.erciyes.edu.tr/tr/tum-duyurular',
+    startingLink: 'http://eruzem.erciyes.edu.tr',
+    titleSelector: 'div.tt-cours-info > a',
+    linkSelector: 'div.tt-cours-info > a',
+  ),
   /* Department(
     name: '',
     type: DepartmentTypes.Erasmus,
@@ -638,4 +646,5 @@ enum DepartmentTypes {
   Farabi,
   AnasayfaErciyesUniversitesi,
   OgrenciIsleriDaireBaskanligi,
+  Eruzem,
 }

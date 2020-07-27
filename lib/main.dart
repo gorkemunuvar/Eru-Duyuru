@@ -97,16 +97,17 @@ class _HomeScreenState extends State<HomeScreen> {
         //Settings Icon
         actions: <Widget>[
           Padding(
-              padding: EdgeInsets.only(right: 20.0),
-              child: GestureDetector(
-                onTap: () {
-                  navigatorKey.currentState.pushNamed('/Settings');
-                },
-                child: Icon(
-                  Icons.settings,
-                  size: 26.0,
-                ),
-              )),
+            padding: EdgeInsets.only(right: 20.0),
+            child: GestureDetector(
+              onTap: () {
+                navigatorKey.currentState.pushNamed('/Settings');
+              },
+              child: Icon(
+                Icons.settings,
+                size: 26.0,
+              ),
+            ),
+          ),
         ],
       ),
       body: _widgetOptions.elementAt(_selectedIndex),

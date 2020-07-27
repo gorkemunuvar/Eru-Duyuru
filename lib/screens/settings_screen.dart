@@ -235,6 +235,10 @@ class SettingsScreen extends StatelessWidget {
                   paddingState: false,
                   title: "Farabi Duyuruları",
                 ),
+                SwitchListTileCard(
+                  paddingState: false,
+                  title: "Erüzem Duyuruları",
+                ),
               ],
             );
           } else if (snapshot.hasError) {

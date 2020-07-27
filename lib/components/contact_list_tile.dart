@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:anons/models/person.dart';
+import 'package:share/share.dart';
 
 class ContactListTile extends StatelessWidget {
   ContactListTile({@required this.person});
@@ -31,9 +32,18 @@ class ContactListTile extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             IconButton(
+              icon: Icon(Icons.share),
+              color: Colors.black54,
+              iconSize: 22.0,
+              onPressed: () {
+                Share.share(
+                    '${person.name}\n${person.department}\n${person.email}\nDahili No: ${person.phone}');
+              },
+            ),
+            IconButton(
               icon: Icon(Icons.mail_outline),
               color: Colors.red[300],
-              iconSize: 25.0,
+              iconSize: 22.0,
               onPressed: () {
                 Clipboard.setData(ClipboardData(text: person.email));
                 _showToast(context);
@@ -42,7 +52,7 @@ class ContactListTile extends StatelessWidget {
             IconButton(
               icon: Icon(Icons.phone),
               color: Colors.green[700],
-              iconSize: 25.0,
+              iconSize: 22.0,
               onPressed: () {},
             ),
           ],

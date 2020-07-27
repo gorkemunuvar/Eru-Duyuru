@@ -38,7 +38,10 @@ class AnnouncementListTile extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) {
-              return WebViewScreen(initialUrl: link);
+              return WebViewScreen(
+                title: title,
+                initialUrl: link,
+              );
             }),
           );
         },

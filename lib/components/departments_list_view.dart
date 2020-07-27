@@ -634,6 +634,18 @@ class DepartmentsListView extends StatelessWidget {
               );
             },
           ),
+          ListTileCard(
+            paddingState: false,
+            title: "Erüzem Duyuruları",
+            onTap: () {
+              _showAnnouncements(
+                "Erüzem Duyuruları",
+                Department.getDepartmentInstance(
+                  DepartmentTypes.Eruzem,
+                ),
+              );
+            },
+          ),
         ],
       ),
     );
