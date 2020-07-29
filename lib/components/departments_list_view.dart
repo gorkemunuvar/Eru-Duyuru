@@ -29,16 +29,6 @@ class DepartmentsListView extends StatelessWidget {
       color: Colors.white,
       child: ListView(
         children: <Widget>[
-          FlatButton(
-            child: Text("Run parseHtml()"),
-            onPressed: () {
-              Scrapper.parseHtml(
-                "https://mekatronik.erciyes.edu.tr/?Akademik_Kadro",
-                "h5.font-16 > a",
-                "ul.list-block > li",
-              );
-            },
-          ),
           DepartmentsExpansionTile(
             paddingState: false,
             title: "Fakülteler ve Bölümler",

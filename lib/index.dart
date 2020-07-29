@@ -13,6 +13,7 @@ export 'components/future_builder_announcements.dart';
 export 'screens/webview_screen.dart';
 export 'screens/contact_screen.dart';
 export 'screens/settings_screen.dart';
+export 'screens/info_screen.dart';
 
 export 'screens/announcements_screen.dart';
 export 'screens/department_announcements_screen.dart';

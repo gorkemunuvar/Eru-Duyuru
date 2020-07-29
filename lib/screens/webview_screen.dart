@@ -32,10 +32,10 @@ class WebViewScreen extends StatelessWidget {
             padding: EdgeInsets.only(right: 20.0),
             child: GestureDetector(
               onTap: () {
-                _launchURL();
+                Share.share("${title}\n${initialUrl}");
               },
               child: Icon(
-                Icons.open_in_browser,
+                Icons.share,
                 size: 26.0,
               ),
             ),
@@ -44,10 +44,10 @@ class WebViewScreen extends StatelessWidget {
             padding: EdgeInsets.only(right: 20.0),
             child: GestureDetector(
               onTap: () {
-                Share.share("${title}\n${initialUrl}");
+                _launchURL();
               },
               child: Icon(
-                Icons.share,
+                Icons.open_in_browser,
                 size: 26.0,
               ),
             ),

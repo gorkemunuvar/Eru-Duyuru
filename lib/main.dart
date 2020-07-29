@@ -1,5 +1,4 @@
 import 'index.dart';
-import 'screens/test_contact_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -27,10 +26,6 @@ Future _readDeviceStorage() async {
 }
 
 class MyApp extends StatelessWidget {
-  MyApp() {
-    print("test");
-  }
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -39,7 +34,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => HomeScreen(),
         '/Settings': (context) => SettingsScreen(),
-        '/TestContacts': (context) => TestContacts(),
+        '/ContactScreen': (context) => ContactScreen(),
         '/DepartmentAnnouncements': (context) => DepartmentAnnouncementsScreen(
               title: currentDepartmentName,
               department: currentDepartment,
@@ -78,8 +73,8 @@ class _HomeScreenState extends State<HomeScreen> {
       },
     ),
     DepartmentsListView(),
-    //Contacts(),
-    TestContacts(),
+    ContactScreen(),
+    InfoScreen(),
   ];
 
   void _onItemTapped(int index) {
@@ -128,7 +123,13 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: Icon(Icons.perm_contact_calendar),
             title: Text('Rehber'),
           ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.info),
+            title: Text('İletişim'),
+          ),
         ],
+        unselectedItemColor: Colors.grey,
+        unselectedLabelStyle: TextStyle(color: Colors.grey),
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.amber[800],
         onTap: _onItemTapped,
