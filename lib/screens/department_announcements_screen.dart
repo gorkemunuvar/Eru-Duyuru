@@ -7,8 +7,10 @@ class DepartmentAnnouncementsScreen extends StatelessWidget {
   final String title;
   final Department department;
 
-  DepartmentAnnouncementsScreen(
-      {@required this.title, @required this.department});
+  DepartmentAnnouncementsScreen({
+    @required this.title,
+    @required this.department,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -16,9 +18,8 @@ class DepartmentAnnouncementsScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: kAppBarColor,
         title: Text(title),
-        //Settings Icon
       ),
-      body: FutureBuilderAnnouncements(department),
+      body: FutureBuilderAnnouncements(department.name),
     );
   }
 }

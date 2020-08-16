@@ -15,8 +15,6 @@ class Department {
   //getAnnouncement içindeki döngü sınırın eşit olmadıklarında eşitlemek için.
   final int listBoundary;
 
-  List<Announcement> announcements = List<Announcement>();
-
   Department({
     this.name,
     @required this.type,
@@ -30,8 +28,15 @@ class Department {
     this.listBoundary,
   });
 
+  List<Announcement> announcements = List<Announcement>();
+
   static Department getDepartmentInstance(DepartmentTypes type) {
     for (Department d in _departments) if (type == d.type) return d;
+    return null;
+  }
+
+  static String getDepartmentName(DepartmentTypes type) {
+    for (Department d in _departments) if (type == d.type) return d.name;
     return null;
   }
 
@@ -579,15 +584,6 @@ List<Department> _departments = [
     titleSelector: 'div.tt-cours-info > a',
     linkSelector: 'div.tt-cours-info > a',
   ),
-  /* Department(
-    name: '',
-    type: DepartmentTypes.Erasmus,
-    url: '',
-    startingLink: '',
-    titleSelector: '',
-    linkSelector: '',
-    dateSelector: '',
-  ), */
 ];
 
 enum DepartmentTypes {

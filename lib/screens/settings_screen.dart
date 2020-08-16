@@ -1,30 +1,15 @@
 import 'package:anons/index.dart';
 import 'package:flutter/material.dart';
 import 'package:anons/services/storage.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 List<String> _departmentSwitchStates = List<String>();
 
-//Map<departmentName, isSwitched>
-//Future<Map<String, bool>>> olabilir.
-Future<List<String>> _readDeviceStorage() async {
-  final prefs = await SharedPreferences.getInstance();
-  List<String> departmentNames = prefs.getStringList('departments') ?? [];
-
-  for (String name in departmentNames) {
-    print(name);
-    _departmentSwitchStates.add(name);
+class SettingsScreen extends StatelessWidget {
+  Future<List> readDeviceStorage() async {
+    _departmentSwitchStates = await DeviceStorage().read();
+    return _departmentSwitchStates;
   }
 
-  return _departmentSwitchStates;
-}
-
-bool switchControl(String departmentName) {
-  if (_departmentSwitchStates.indexOf(departmentName) != -1) return true;
-  return false;
-}
-
-class SettingsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,7 +19,7 @@ class SettingsScreen extends StatelessWidget {
         //Settings Icon
       ),
       body: FutureBuilder(
-        future: _readDeviceStorage(),
+        future: readDeviceStorage(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             return ListView(
@@ -265,6 +250,11 @@ class SwitchListTileCard extends StatefulWidget {
 }
 
 class _SwitchListTileCardState extends State<SwitchListTileCard> {
+  bool switchControl(String departmentName) {
+    if (_departmentSwitchStates.indexOf(departmentName) != -1) return true;
+    return false;
+  }
+
   @override
   Widget build(BuildContext context) {
     bool isSwitched = switchControl(widget.title);
@@ -277,24 +267,25 @@ class _SwitchListTileCardState extends State<SwitchListTileCard> {
         child: SwitchListTile(
           title: Text(widget.title),
           value: isSwitched,
-          onChanged: (bool value) {
+          onChanged: (bool value) async {
             setState(() {
-              //eğer listede 'obisis' varsa sil
+              //Eğer ilgili bölüm cihaza eklenmişse
               if (_departmentSwitchStates.indexOf(widget.title) != -1) {
+                //Listeden sil.
                 _departmentSwitchStates.remove(widget.title);
                 isSwitched = false;
               }
-              //yoksa ekle
+              //Yok ise listeye ekle.
               else {
                 _departmentSwitchStates.add(widget.title);
                 isSwitched = true;
               }
 
-              //Yeni listi cihaza yaz
-              DeviceStorage.write(_departmentSwitchStates);
-
-              //_lights = value;
+              //Anasayfada görüntülenecek listeyi cihaza yaz
             });
+
+            //Bu fonk. setState içinde doğru çalışmıyor.
+            await DeviceStorage().write(_departmentSwitchStates);
           },
         ),
       ),

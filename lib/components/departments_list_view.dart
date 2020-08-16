@@ -1,10 +1,8 @@
-import 'package:anons/main.dart';
+import 'package:anons/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:anons/components/list_tile_card.dart';
 import 'package:anons/models/department.dart';
 import 'package:anons/components/departments_expansion_tile.dart';
-
-import 'package:anons/services/scrapper.dart';
 
 //TO DO
 /* *IIBF -> Türkçe Karakter sorunu
@@ -17,10 +15,10 @@ import 'package:anons/services/scrapper.dart';
 class DepartmentsListView extends StatelessWidget {
   void _showAnnouncements(String title, Department department) {
     //Those variables is for navigator in main.dart to navigate to /DepartmentAnnouncements
-    currentDepartmentName = title;
-    currentDepartment = department;
+    Routing.currentDepartmentName = title;
+    Routing.currentDepartment = department;
 
-    navigatorKey.currentState.pushNamed('/DepartmentAnnouncements');
+    Routing.navigatorKey.currentState.pushNamed('/DepartmentAnnouncements');
   }
 
   @override

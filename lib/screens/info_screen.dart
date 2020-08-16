@@ -22,18 +22,6 @@ class InfoScreen extends StatelessWidget {
                 launch(_emailLaunchUri.toString());
               },
             ),
-            /*  Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text("Uygulamayı paylaş"),
-                IconButton(
-                  icon: Icon(Icons.share),
-                  onPressed: () {
-                    Share.share("test");
-                  },
-                ),
-              ],
-            ), */
           ],
         ),
       ),

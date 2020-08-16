@@ -1,0 +1,13 @@
+[OK] - Hata: Bir sayfayı anasayfaya birden fazla ekleyebiliyor.
+[OK] - İnternete bağlı olmadan uygulamayı açınca kullanıcı dostu bir hata mesajı gösterilmeli.
+[--] - Ayarlarda bir değişiklik yapınca anasayfaya direk yansımalı.
+[--] - Ayarlarda yeni bir bölüm eklenir ya da çıkarılırsa işleme dair Toast mesajı göster.
+     - Bunun yerine ayarlara değişiklikleri kaydet butonu eklenebilir.   
+[--] - Rehber ekranına arama filteremesine dair bilgilendirme eklenmeli.
+[--] - Tarayıcıda obisise ve webmaile yönlendiren bir kısayol eklenmeli.
+[--] - İletişim ekranına uygulamayı paylaş özelliği ekle.
+[--] - Duyuru ve rehber paylaşırken kısa uygulama linki ekle.
+[--] - Duyuru kartlarına paylaşma ikonu eklenebilir.
+[--] - WebView açılırken indicator gösterilebilir.
+[--] - Hata: WebView içeriği bazen tarayıcıdaki boyutunda görüntülemiyor.
+[--] - (Şimdilik Gereksiz) Duyuru ekranı için pull-to-refresh özelliği eklenmeli.
