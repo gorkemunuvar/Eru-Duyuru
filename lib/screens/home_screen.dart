@@ -6,16 +6,13 @@ List<FutureBuilderAnnouncements> _contentList =
     List<FutureBuilderAnnouncements>();
 
 Future<List> _readDepartmentsOnDevice() async {
-/* _departmentsLength = 0;
-   _tabList.clear();
-   _contentList.clear(); */
-
   List<String> departmentNames = await DeviceStorage().read();
   _departmentsLength = departmentNames.length;
 
   for (String departmentName in departmentNames) {
     _tabList.add(Tab(text: departmentName));
-    _contentList.add(FutureBuilderAnnouncements(departmentName));
+    _contentList
+        .add(FutureBuilderAnnouncements(departmentName: departmentName));
   }
 
   return departmentNames;
@@ -36,22 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
     _bottomBarWidgetList.clear();
 
     _bottomBarWidgetList = <Widget>[
-      FutureBuilder(
-        future: _readDepartmentsOnDevice(),
-        builder: (context, snapshot) {
-          if (snapshot.hasData) {
-            return HomeTabBarComponent(
-              _departmentsLength,
-              _tabList,
-              _contentList,
-            );
-          } else if (snapshot.connectionState != ConnectionState.done) {
-            return Center(
-              child: CircularProgressIndicator(),
-            );
-          }
-        },
-      ),
+      FutureBuilderTabs(),
       DepartmentsListView(),
       ContactScreen(),
       InfoScreen(),
@@ -59,7 +41,6 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   int _selectedBottomBarWidget = 0;
-
   void _onBottomBarTapped(int index) {
     setState(() {
       _selectedBottomBarWidget = index;
@@ -74,41 +55,46 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    _departmentsLength = 0;
+    _tabList.clear();
+    _contentList.clear();
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: kAppBarColor,
-        title: const Text('Erciyes Üniversitesi'),
+        title: Text('Erciyes Üniversitesi'),
         actions: <Widget>[
-          Padding(
-            padding: EdgeInsets.only(right: 20.0),
-            child: Row(
-              children: <Widget>[
-                //Settings Icon
-                IconButton(
-                  icon: Icon(
-                    Icons.settings,
-                    size: 26.0,
+          Builder(
+            builder: (context) => Padding(
+              padding: EdgeInsets.only(right: 20.0),
+              child: Row(
+                children: <Widget>[
+                  //Settings Icon
+                  IconButton(
+                    icon: Icon(
+                      Icons.settings,
+                      size: 26.0,
+                    ),
+                    onPressed: () async {
+                      var settings = await Routing.navigatorKey.currentState
+                          .pushNamed('/Settings');
+
+                      if (settings == true) {
+                        setState(() {
+                          updateUI();
+
+                          Future.delayed(const Duration(milliseconds: 600), () {
+                            Toast.show(
+                                context, "Değişiklikler anasayfanıza eklendi.");
+                          });
+                        });
+                      }
+                    },
                   ),
-                  onPressed: () =>
-                      Routing.navigatorKey.currentState.pushNamed('/Settings'),
-                ),
-                SizedBox(width: 15.0),
-                //Update Icon
-                GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      updateUI();
-                      print("UI Updated.");
-                    });
-                  },
-                  child: Icon(
-                    Icons.update,
-                    size: 26.0,
-                  ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
+          )
         ],
       ),
       body: _bottomBarWidgetList.elementAt(_selectedBottomBarWidget),
@@ -116,6 +102,37 @@ class _HomeScreenState extends State<HomeScreen> {
         currentIndex: _selectedBottomBarWidget,
         onTap: _onBottomBarTapped,
       ),
+    );
+  }
+}
+
+class FutureBuilderTabs extends StatefulWidget {
+  const FutureBuilderTabs({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  _FutureBuilderTabsState createState() => _FutureBuilderTabsState();
+}
+
+class _FutureBuilderTabsState extends State<FutureBuilderTabs> {
+  @override
+  Widget build(BuildContext context) {
+    return FutureBuilder(
+      future: _readDepartmentsOnDevice(),
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          return HomeTabBarComponent(
+            _departmentsLength,
+            _tabList,
+            _contentList,
+          );
+        } else if (snapshot.connectionState != ConnectionState.done) {
+          return Center(
+            child: CircularProgressIndicator(),
+          );
+        }
+      },
     );
   }
 }

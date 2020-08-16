@@ -12,8 +12,6 @@ class Scrapper {
     Response response = await client.get(url);
 
     if (response.statusCode == 200) {
-      print("-----\nstarted\n-----");
-
       Document document = parse(response.body);
 
       List<Element> names = document.querySelectorAll(nameSelector);
@@ -43,8 +41,6 @@ class Scrapper {
       }
 
       printWrapped(json);
-
-      print("-----\nfinished\n-----");
     }
   }
 }

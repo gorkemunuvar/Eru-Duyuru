@@ -1,5 +1,6 @@
 export 'routes.dart';
 
+export 'services/toast.dart';
 export 'services/storage.dart';
 
 export 'utilities/constants.dart';

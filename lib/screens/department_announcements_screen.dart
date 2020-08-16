@@ -19,7 +19,7 @@ class DepartmentAnnouncementsScreen extends StatelessWidget {
         backgroundColor: kAppBarColor,
         title: Text(title),
       ),
-      body: FutureBuilderAnnouncements(department.name),
+      body: FutureBuilderAnnouncements(departmentName: department.name),
     );
   }
 }

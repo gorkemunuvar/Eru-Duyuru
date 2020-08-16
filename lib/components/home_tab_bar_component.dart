@@ -34,7 +34,7 @@ class HomeTabBarComponent extends StatelessWidget {
                   children: length == 0
                       ? [
                           FutureBuilderAnnouncements(
-                            Department.getDepartmentName(
+                            departmentName: Department.getDepartmentName(
                                 DepartmentTypes.AnasayfaErciyesUniversitesi),
                           ),
                         ]

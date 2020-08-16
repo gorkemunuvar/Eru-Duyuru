@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:anons/models/department.dart';
 import 'package:anons/screens/announcements_screen.dart';
 import 'package:anons/services/html_parser.dart';
-import 'package:anons/services/alert_dialog.dart';
 import 'package:anons/models/announcement.dart';
 
 class FutureBuilderAnnouncements extends StatefulWidget {
   final String departmentName;
 
-  FutureBuilderAnnouncements(this.departmentName);
+  FutureBuilderAnnouncements({
+    @required this.departmentName,
+  });
 
   @override
   _FutureBuilderAnnouncementsState createState() =>
@@ -20,10 +21,10 @@ class _FutureBuilderAnnouncementsState
   List<Announcement> announcements = List<Announcement>();
 
   Future<List> getData() async {
-    announcements.clear();
     Department department = Department.getDepartmentInstance(
       Department.getDepartmentType(widget.departmentName),
     );
+
     announcements = await HtmlParsing().getAnnouncements(department);
 
     return announcements;
@@ -34,55 +35,59 @@ class _FutureBuilderAnnouncementsState
     return FutureBuilder(
       future: getData(),
       builder: (context, snapshot) {
-        if (snapshot.hasData) {
-          return AnnouncementsScreen(
-            announcements: announcements,
-          );
-        } else if (snapshot.connectionState != ConnectionState.done) {
-          return Center(
-            child: CircularProgressIndicator(),
-          );
-        } else if (snapshot.hasError) {
-          //Error Screen
-          return Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0),
-            child: Column(
-              children: <Widget>[
-                Expanded(
-                  flex: 10,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Icon(
-                        Icons.error_outline,
-                        size: 30.0,
-                      ),
-                      SizedBox(height: 10.0),
-                      Text(
-                        "Beklenmeyen bir hata ile karşılaştın :/ İnternet bağlantını kontrol edip tekrar dene!",
-                        textAlign: TextAlign.center,
-                      ),
-                      FlatButton(
-                        child: Text('Tekrar Dene'),
-                        onPressed: () {
-                          setState(() {});
-                        },
-                      ),
-                    ],
+        try {
+          if (snapshot.hasData) {
+            return AnnouncementsScreen(
+              announcements: announcements,
+            );
+          } else if (snapshot.connectionState != ConnectionState.done) {
+            return Center(
+              child: CircularProgressIndicator(),
+            );
+          } else if (snapshot.hasError) {
+            //Error Screen
+            return Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 35.0),
+              child: Column(
+                children: <Widget>[
+                  Expanded(
+                    flex: 10,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Icon(
+                          Icons.error_outline,
+                          size: 90.0,
+                          color: Colors.grey,
+                        ),
+                        SizedBox(height: 10.0),
+                        Text(
+                          "Beklenmeyen bir hata ile karşılaştın :/ İnternet bağlantını kontrol edip tekrar dene!",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 17,
+                          ),
+                        ),
+                        SizedBox(height: 25.0),
+                        RaisedButton(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+                            side: BorderSide(color: Colors.orange[50]),
+                          ),
+                          color: Colors.grey[200],
+                          child: Text('Tekrar Dene'),
+                          onPressed: () {
+                            setState(() {});
+                          },
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                FlatButton(
-                  child: Text('Hatayı Görüntüle'),
-                  onPressed: () => AlertDialogHelper().show(
-                    context,
-                    "Hata",
-                    snapshot.error.toString(),
-                  ),
-                ),
-              ],
-            ),
-          );
-        }
+                ],
+              ),
+            );
+          }
+        } catch (e) {}
       },
     );
   }
