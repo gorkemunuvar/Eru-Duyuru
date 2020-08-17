@@ -6,11 +6,14 @@
 [OK] - Hata görüntüle butonunu kaldır.
 [OK] - Hata: Hot Reload yapınca duyurular görünmeyebiliyor.
 [OK] - Error görüntülerken ikonu 3-4 kat büyük ve daha şeffaf yap. Butona buton görünümü eklenmeli.
-[--] - Rehber ekranına arama filteremesine dair bilgilendirme eklenmeli.
-[--] - Tarayıcıda obisise ve webmaile yönlendiren bir kısayol eklenmeli.
+[OK] - Rehber ekranına arama filteremesine dair bilgilendirme eklenmeli.
+[OK] - Bölüm sayfalarını taraycıda açabilmek için buton eklenmeli.
+[OK] - Tarayıcıda obisise ve webmaile yönlendiren bir kısayol eklenmeli.
+[OK] - WebView açılırken indicator gösterilebilir.
+
+[--] - Hata: WebView içeriği bazen tarayıcıdaki boyutunda görüntülemiyor.(Farabi)
+[--] - Duyuru kartlarına paylaşma ikonu eklenebilir.
+[--] - Rehbere scroll bar eklenebilir.
 [--] - İletişim ekranına uygulamayı paylaş özelliği ekle.
 [--] - Duyuru ve rehber paylaşırken kısa uygulama linki ekle.
-[--] - Duyuru kartlarına paylaşma ikonu eklenebilir.
-[--] - WebView açılırken indicator gösterilebilir.
-[--] - Hata: WebView içeriği bazen tarayıcıdaki boyutunda görüntülemiyor.
 [--] - (Belki :/) Duyuru ekranı için pull-to-refresh ya da yenile özelliği eklenmeli.     

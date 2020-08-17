@@ -9,6 +9,8 @@ class DeviceStorage {
 
   Future<List> read() async {
     final prefs = await SharedPreferences.getInstance();
-    return prefs.getStringList('departments') ?? [];
+    List<String> stringList = prefs.getStringList('departments') ?? [];
+
+    return stringList;
   }
 }

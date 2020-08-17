@@ -341,7 +341,7 @@ class BottomButton extends StatelessWidget {
         if (changeState)
           onTap();
         else
-          Toast.show(context, "Herhangi bir değişiklik yapmadınız!");
+          Toast.show(context, "Herhangi bir değişiklik yapmadın!");
       },
       child: Container(
         child: Center(

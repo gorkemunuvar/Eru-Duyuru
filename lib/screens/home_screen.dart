@@ -7,6 +7,7 @@ List<FutureBuilderAnnouncements> _contentList =
 
 Future<List> _readDepartmentsOnDevice() async {
   List<String> departmentNames = await DeviceStorage().read();
+
   _departmentsLength = departmentNames.length;
 
   for (String departmentName in departmentNames) {
@@ -36,6 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
       FutureBuilderTabs(),
       DepartmentsListView(),
       ContactScreen(),
+      ShortcutScreen(),
       InfoScreen(),
     ];
   }
@@ -85,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                           Future.delayed(const Duration(milliseconds: 600), () {
                             Toast.show(
-                                context, "Değişiklikler anasayfanıza eklendi.");
+                                context, "Değişiklikler anasayfana eklendi.");
                           });
                         });
                       }
@@ -121,17 +123,24 @@ class _FutureBuilderTabsState extends State<FutureBuilderTabs> {
     return FutureBuilder(
       future: _readDepartmentsOnDevice(),
       builder: (context, snapshot) {
-        if (snapshot.hasData) {
-          return HomeTabBarComponent(
-            _departmentsLength,
-            _tabList,
-            _contentList,
-          );
-        } else if (snapshot.connectionState != ConnectionState.done) {
-          return Center(
-            child: CircularProgressIndicator(),
-          );
-        }
+        try {
+          if (snapshot.hasData) {
+            return HomeTabBarComponent(
+              _departmentsLength,
+              _tabList,
+              _contentList,
+            );
+          } else if (snapshot.connectionState != ConnectionState.done) {
+            return Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+        } catch (e) {}
+
+        return Container(
+          width: 0,
+          height: 0,
+        );
       },
     );
   }

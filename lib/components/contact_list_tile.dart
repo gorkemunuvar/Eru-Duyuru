@@ -1,22 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:anons/models/person.dart';
 import 'package:share/share.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:anons/services/url_launcher_helper.dart';
 
 class ContactListTile extends StatelessWidget {
-  ContactListTile({@required this.person});
-
   final Person person;
 
-  _launchURL() async {
-    const url = 'tel:0352 207 6666';
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
+  ContactListTile({@required this.person});
 
+  UrlLauncher urlLauncher = UrlLauncher();
   @override
   Widget build(BuildContext context) {
     final Uri _emailLaunchUri = Uri(
@@ -59,7 +51,7 @@ class ContactListTile extends StatelessWidget {
               color: Colors.red[300],
               iconSize: 22.0,
               onPressed: () {
-                launch(_emailLaunchUri.toString());
+                urlLauncher.launchUrl(_emailLaunchUri.toString());
               },
             ),
             IconButton(
@@ -67,7 +59,7 @@ class ContactListTile extends StatelessWidget {
               color: Colors.green[700],
               iconSize: 22.0,
               onPressed: () {
-                _launchURL();
+                urlLauncher.launchUrl("tel:0352 207 6666");
               },
             ),
           ],

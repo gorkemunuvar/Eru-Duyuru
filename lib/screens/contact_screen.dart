@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'dart:convert';
+import 'package:anons/services/alert_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:anons/models/person.dart';
@@ -26,11 +27,11 @@ class _ContactScreenState extends State<ContactScreen> {
     String jsonString = await _loadFromAsset();
 
     final jsonResponse = jsonDecode(jsonString)['people'] as List;
-    List<Person> people_list =
+    List<Person> peopleList =
         jsonResponse.map((tagJson) => Person.fromJson(tagJson)).toList();
 
     people.clear();
-    for (Person person in people_list) people.add(person);
+    for (Person person in peopleList) people.add(person);
   }
 
   @override
@@ -57,6 +58,12 @@ class _ContactScreenState extends State<ContactScreen> {
   }
 
   @override
+  void dispose() {
+    super.dispose();
+    searchResult.clear();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return FutureBuilder(
       future: parseJson(),
@@ -69,33 +76,52 @@ class _ContactScreenState extends State<ContactScreen> {
                 Padding(
                   padding: const EdgeInsets.symmetric(
                       horizontal: 8.0, vertical: 6.0),
-                  child: Container(
-                    color: Colors.white,
-                    height: 45,
-                    child: Theme(
-                      data: ThemeData(
-                        primaryColor: Colors.amber[700],
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          color: Colors.white,
+                          height: 45,
+                          child: Theme(
+                            data: ThemeData(
+                              primaryColor: Colors.amber[700],
+                            ),
+                            child: TextField(
+                              focusNode: FocusNode(),
+                              enableInteractiveSelection: true,
+                              textAlign: TextAlign.start,
+                              onChanged: (value) {
+                                filterSearchResults(value);
+                              },
+                              controller: editingController,
+                              decoration: InputDecoration(
+                                  prefixIcon: Icon(Icons.search),
+                                  border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(8.0)))),
+                            ),
+                          ),
+                        ),
                       ),
-                      child: TextField(
-                        textAlign: TextAlign.start,
-                        onChanged: (value) {
-                          filterSearchResults(value);
+                      IconButton(
+                        icon: Icon(
+                          Icons.info_outline,
+                          color: Colors.grey[700],
+                        ),
+                        onPressed: () {
+                          AlertDialogHelper alert = AlertDialogHelper();
+                          alert.show(context, "Filtreleme",
+                              "Aradığınız kişinin adını/soyadını ya da bölüm/fakülte bilgisini arama kutusuna yazarak sonuçları filtreleyebilirsiniz.");
                         },
-                        controller: editingController,
-                        decoration: InputDecoration(
-                            prefixIcon: Icon(Icons.search),
-                            border: OutlineInputBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(8.0)))),
+                        iconSize: 35.0,
                       ),
-                    ),
+                    ],
                   ),
                 ),
                 Expanded(
                   child: searchResult.length != 0 ||
                           editingController.text.isNotEmpty
                       ? ListView.builder(
-                          scrollDirection: Axis.vertical,
                           shrinkWrap: true,
                           itemCount: searchResult.length,
                           itemBuilder: (context, i) {
@@ -106,6 +132,7 @@ class _ContactScreenState extends State<ContactScreen> {
                         )
                       : ListView.builder(
                           shrinkWrap: true,
+                          scrollDirection: Axis.vertical,
                           itemCount: people.length,
                           itemBuilder: (context, i) {
                             return ContactListTile(person: people[i]);

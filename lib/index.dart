@@ -20,6 +20,7 @@ export 'screens/info_screen.dart';
 export 'screens/webview_screen.dart';
 export 'screens/contact_screen.dart';
 export 'screens/settings_screen.dart';
+export 'screens/shortcuts_screen.dart';
 export 'screens/pull_to_refresh_screen.dart';
 
 export 'screens/announcements_screen.dart';

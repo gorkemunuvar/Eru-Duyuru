@@ -24,7 +24,14 @@ class BottomNavigationBarComponent extends StatelessWidget {
           title: Text('Rehber'),
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.info),
+          icon: Icon(
+            Icons.link,
+            size: 30.0,
+          ),
+          title: Text('Kısayollar'),
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.info_outline),
           title: Text('İletişim'),
         ),
       ],
