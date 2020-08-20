@@ -1,9 +1,4 @@
-# anons
+Uygulama ile Erciyes Üniversitesindeki bölümlerinin ve web sitelerinin duyurularına, akademik kadro rehberine ve hızlı bağlantılara kolayca ulaşılabilir.
 
-To Do List
-
- - Eğitim fakültesi akademik kadrosunu rehbere ekle.
- - Diş hekimliği akademik kadrosunu rehbere ekle.
- - Tıp fakültesi akademik kadrosunu rehbere ekle.
- - Ydyo akademik kadrosunu rehbere ekle.
- - Erüzem, anasayfaya eklendiğinde hata veriyor.
+Uygulama için Play Store Linki
+https://play.google.com/store/apps/details?id=com.project.anons
