@@ -1,8 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
-import 'package:anons/utilities/constants.dart';
-import 'package:anons/services/url_launcher_helper.dart';
 import 'package:share/share.dart';
+import 'package:flutter/material.dart';
+import 'package:anons/utilities/constants.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:anons/services/url_launcher_helper.dart';
+import 'package:flutter_downloader/flutter_downloader.dart';
+import 'package:permission_handler/permission_handler.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
 class WebViewScreen extends StatefulWidget {
   final String title;
@@ -21,6 +24,7 @@ class _WebViewScreenState extends State<WebViewScreen> {
   String title, url;
   bool isLoading = true;
   final _key = UniqueKey();
+  InAppWebViewController webView;
 
   UrlLauncher urlLauncher = UrlLauncher();
   @override
@@ -59,16 +63,38 @@ class _WebViewScreenState extends State<WebViewScreen> {
       ),
       body: Stack(
         children: [
-          WebView(
-            userAgent:
-                'Mozilla/5.0 (Linux; <Android Version>; <Build Tag etc.>) AppleWebKit/<WebKit Rev> (KHTML, like Gecko) Chrome/<Chrome Rev> Mobile Safari/<WebKit Rev>',
-            key: _key,
+          InAppWebView(
             initialUrl: widget.initialUrl,
-            javascriptMode: JavascriptMode.unrestricted,
-            onPageFinished: (finish) {
+            key: _key,
+            initialHeaders: {},
+            initialOptions: InAppWebViewGroupOptions(
+              crossPlatform: InAppWebViewOptions(
+                debuggingEnabled: true,
+                useOnDownloadStart: true,
+              ),
+            ),
+            onWebViewCreated: (InAppWebViewController controller) {
+              webView = controller;
+            },
+            onLoadStart: (InAppWebViewController controller, String url) {
               setState(() {
                 isLoading = false;
               });
+            },
+            onLoadStop: (InAppWebViewController controller, String url) {},
+            onDownloadStart: (controller, url) async {
+              print("###########onDownloadStart########### $url");
+              //await Permission.storage.request();
+
+              final taskId = await FlutterDownloader.enqueue(
+                url: url,
+                savedDir: (await getExternalStorageDirectory()).path,
+                showNotification:
+                    true, // show download progress in status bar (for Android)
+                openFileFromNotification:
+                    true, // click on notification to open downloaded file (for Android)
+                requiresStorageNotLow: true,
+              );
             },
           ),
           isLoading

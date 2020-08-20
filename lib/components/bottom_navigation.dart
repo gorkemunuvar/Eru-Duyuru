@@ -28,7 +28,7 @@ class BottomNavigationBarComponent extends StatelessWidget {
             Icons.link,
             size: 30.0,
           ),
-          title: Text('Kısayollar'),
+          title: Text('Hızlı Bağlantılar'),
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.info_outline),

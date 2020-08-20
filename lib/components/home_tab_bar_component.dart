@@ -21,8 +21,9 @@ class HomeTabBarComponent extends StatelessWidget {
                 indicatorColor: Colors.amber[700],
                 labelColor: Colors.amber[700],
                 unselectedLabelColor: Colors.grey,
+                //labelStyle: TextStyle(color: Colors.grey, fontSize: 25.0),
                 tabs: length == 0
-                    ? [Text("Erciyes Üniversitesi Anasayfası")]
+                    ? [Tab(text: "Erciyes Üniversitesi Anasayfası")]
                     : tabList,
               ),
             ),
