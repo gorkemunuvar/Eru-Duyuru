@@ -1,11 +1,15 @@
+import 'dart:io';
 import 'package:share/share.dart';
 import 'package:flutter/material.dart';
+import 'package:path/path.dart' as path;
+import 'package:open_file/open_file.dart';
 import 'package:anons/utilities/constants.dart';
+import 'package:anons/services/downloading.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:anons/services/url_launcher_helper.dart';
-import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'package:downloads_path_provider_28/downloads_path_provider_28.dart';
 
 class WebViewScreen extends StatefulWidget {
   final String title;
@@ -21,10 +25,61 @@ class WebViewScreen extends StatefulWidget {
 }
 
 class _WebViewScreenState extends State<WebViewScreen> {
-  String title, url;
+  String url;
+  String title;
+  String progress = "";
+
   bool isLoading = true;
-  final _key = UniqueKey();
+  UniqueKey key = UniqueKey();
   InAppWebViewController webView;
+
+  Future<Directory> _getDownloadDirectory() async {
+    if (Platform.isAndroid)
+      return await DownloadsPathProvider.downloadsDirectory;
+
+    // iOS directory visible to user
+    return await getApplicationDocumentsDirectory();
+  }
+
+  Future<bool> _requestStoragePermissions() async {
+    var storagePermissionStatus = await Permission.storage.status;
+
+    if (storagePermissionStatus != PermissionStatus.granted) {
+      await Permission.storage.request();
+    }
+
+    return storagePermissionStatus == PermissionStatus.granted;
+  }
+
+  Future<void> _download(String url) async {
+    final dir = await _getDownloadDirectory();
+    final isStoragePermissionStatusGranted = await _requestStoragePermissions();
+
+    if (isStoragePermissionStatusGranted) {
+      File file = File(url);
+      String fileName = path.basename(file.path);
+
+      String savePath = path.join(dir.path, fileName);
+      DownloadHelper downloadHelper = DownloadHelper(url);
+      String downloadPath =
+          await downloadHelper.download(savePath, _onReceiveProgress);
+
+      if (downloadPath != null) {
+        await OpenFile.open(downloadPath);
+      }
+    } else {
+      // handle the scenario when user declines the permissions
+    }
+  }
+
+  void _onReceiveProgress(int received, int total) {
+    if (total != -1) {
+      setState(() {
+        progress = (received / total * 100).toStringAsFixed(0) + "%";
+        if (progress == "100%") progress = "";
+      });
+    }
+  }
 
   UrlLauncher urlLauncher = UrlLauncher();
   @override
@@ -34,6 +89,18 @@ class _WebViewScreenState extends State<WebViewScreen> {
         backgroundColor: kAppBarColor,
         title: Text("Duyuru Sayfası"),
         actions: <Widget>[
+          Center(
+            child: Padding(
+              padding: EdgeInsets.only(right: 20.0),
+              child: Text(
+                '$progress',
+                style: TextStyle(
+                  fontSize: 22.0,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ),
           Padding(
             padding: EdgeInsets.only(right: 20.0),
             child: GestureDetector(
@@ -65,7 +132,7 @@ class _WebViewScreenState extends State<WebViewScreen> {
         children: [
           InAppWebView(
             initialUrl: widget.initialUrl,
-            key: _key,
+            key: key,
             initialHeaders: {},
             initialOptions: InAppWebViewGroupOptions(
               crossPlatform: InAppWebViewOptions(
@@ -83,18 +150,7 @@ class _WebViewScreenState extends State<WebViewScreen> {
             },
             onLoadStop: (InAppWebViewController controller, String url) {},
             onDownloadStart: (controller, url) async {
-              print("###########onDownloadStart########### $url");
-              //await Permission.storage.request();
-
-              final taskId = await FlutterDownloader.enqueue(
-                url: url,
-                savedDir: (await getExternalStorageDirectory()).path,
-                showNotification:
-                    true, // show download progress in status bar (for Android)
-                openFileFromNotification:
-                    true, // click on notification to open downloaded file (for Android)
-                requiresStorageNotLow: true,
-              );
+              await _download(url);
             },
           ),
           isLoading

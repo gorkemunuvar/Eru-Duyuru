@@ -37,6 +37,11 @@ dependencies:
   flutter_inappwebview: ^4.0.0+4
   flutter_downloader: ^1.5.0
   permission_handler: ^5.0.1+1
+  flutter_local_notifications: ^1.4.4+4
+  open_file: ^3.0.1
+  downloads_path_provider_28: ^0.1.0
+  dio: ^3.0.10
+
 
 dev_dependencies:
   flutter_test:
