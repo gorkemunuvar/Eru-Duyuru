@@ -14,12 +14,12 @@
 
 *
 [OK] - WebView indirme hatası verebiliyor.
+[OK] - İletişim ekranına uygulamayı paylaş özelliği ekle.
 
 [--] - Uygulama ilk açıldığında mesaj gösterilebilir.
 [--] - Hata: WebView içeriği bazen tarayıcıdaki boyutunda görüntülemiyor.(Farabi)
 [--] - Duyuru kartlarına paylaşma ikonu eklenebilir.
 [--] - Rehbere scroll bar eklenebilir.
-[--] - İletişim ekranına uygulamayı paylaş özelliği ekle.
 [--] - Duyuru ve rehber paylaşırken kısa uygulama linki ekle.
 [--] - (Belki) Duyuru ekranı için pull-to-refresh ya da yenile özelliği eklenmeli.
 [--] - (Belki) Rehberde geri yapınca çıkmak yerine anasayfaya gönderebilir.

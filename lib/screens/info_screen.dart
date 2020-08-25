@@ -1,5 +1,6 @@
+import 'package:share/share.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:anons/services/url_launcher_helper.dart';
 
 class InfoScreen extends StatelessWidget {
   final Uri _emailLaunchUri = Uri(
@@ -29,9 +30,24 @@ class InfoScreen extends StatelessWidget {
                   side: BorderSide(color: Colors.orange[50]),
                 ),
                 color: Colors.grey[200],
-                child: Text("soft.hiker@gmail.com"),
+                child: Text("Uygulamayı Puanla"),
                 onPressed: () {
-                  launch(_emailLaunchUri.toString());
+                  UrlLauncher urlLauncher = UrlLauncher();
+                  urlLauncher.launchUrl(
+                      'https://play.google.com/store/apps/details?id=com.project.anons');
+                },
+              ),
+              RaisedButton(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                  side: BorderSide(color: Colors.orange[50]),
+                ),
+                color: Colors.grey[200],
+                child: Text("Uygulamayı Paylaş"),
+                onPressed: () {
+                  Share.share(
+                      'Erciyses Üniversitesi duyurularını en hızlı ve en kolay şekilde takip et!\n' +
+                          'https://play.google.com/store/apps/details?id=com.project.anons');
                 },
               ),
             ],
