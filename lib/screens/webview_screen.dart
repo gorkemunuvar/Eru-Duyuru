@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:share/share.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:path/path.dart' as path;
 import 'package:open_file/open_file.dart';
 import 'package:anons/utilities/constants.dart';
@@ -85,6 +86,13 @@ class _WebViewScreenState extends State<WebViewScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Share.share("${widget.title}\n${widget.initialUrl}");
+        },
+        child: Icon(Icons.share, size: 30.0),
+        backgroundColor: Color(0xFFF9A81A),
+      ),
       appBar: AppBar(
         backgroundColor: kAppBarColor,
         title: Text("Duyuru Sayfası"),
@@ -98,18 +106,6 @@ class _WebViewScreenState extends State<WebViewScreen> {
                   fontSize: 22.0,
                   color: Colors.white,
                 ),
-              ),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(right: 20.0),
-            child: GestureDetector(
-              onTap: () {
-                Share.share("${widget.title}\n${widget.initialUrl}");
-              },
-              child: Icon(
-                Icons.share,
-                size: 26.0,
               ),
             ),
           ),
@@ -143,12 +139,11 @@ class _WebViewScreenState extends State<WebViewScreen> {
             onWebViewCreated: (InAppWebViewController controller) {
               webView = controller;
             },
-            onLoadStart: (InAppWebViewController controller, String url) {
+            onLoadStop: (InAppWebViewController controller, String url) {
               setState(() {
                 isLoading = false;
               });
             },
-            onLoadStop: (InAppWebViewController controller, String url) {},
             onDownloadStart: (controller, url) async {
               await _download(url);
             },

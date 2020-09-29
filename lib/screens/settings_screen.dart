@@ -235,9 +235,6 @@ class DepartmentsList extends StatelessWidget {
                 title: "Güzel Sanatlar Enstitüsü",
               ),
               SwitchListTileCard(
-                title: "Sağlık Bilimleri Enstitüsü",
-              ),
-              SwitchListTileCard(
                 title: "Sosyal Bilimler Enstitüsü",
               ),
             ],

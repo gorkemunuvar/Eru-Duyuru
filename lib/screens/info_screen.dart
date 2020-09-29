@@ -8,6 +8,8 @@ class InfoScreen extends StatelessWidget {
       path: "soft.hiker@gmail.com",
       queryParameters: {"subject": "Uygulama\bGeri\bBildirimi"});
 
+  UrlLauncher urlLauncher = UrlLauncher();
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -24,36 +26,65 @@ class InfoScreen extends StatelessWidget {
               SizedBox(
                 height: 10.0,
               ),
-              RaisedButton(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10.0),
-                  side: BorderSide(color: Colors.orange[50]),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 100.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    CustomRaisedButton(
+                      title: 'Geri Bildirim',
+                      onPressed: () {
+                        Uri emailLaunchUri = Uri(
+                            scheme: 'mailto',
+                            path: 'soft.hiker@gmail.com',
+                            queryParameters: {
+                              'subject': 'Erü Duyuru Geri Bildirim'
+                            });
+
+                        urlLauncher.launchUrl(emailLaunchUri.toString());
+                      },
+                    ),
+                    CustomRaisedButton(
+                      title: 'Uygulamayı Puanla',
+                      onPressed: () => urlLauncher.launchUrl(
+                        'https://play.google.com/store/apps/details?id=com.project.anons',
+                      ),
+                    ),
+                    CustomRaisedButton(
+                      title: 'Uygulamayı Paylaş',
+                      onPressed: () => Share.share(
+                        'Erciyses Üniversitesi duyurularını en hızlı ve en kolay şekilde takip et!\n' +
+                            'https://play.google.com/store/apps/details?id=com.project.anons',
+                      ),
+                    ),
+                  ],
                 ),
-                color: Colors.grey[200],
-                child: Text("Uygulamayı Puanla"),
-                onPressed: () {
-                  UrlLauncher urlLauncher = UrlLauncher();
-                  urlLauncher.launchUrl(
-                      'https://play.google.com/store/apps/details?id=com.project.anons');
-                },
-              ),
-              RaisedButton(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10.0),
-                  side: BorderSide(color: Colors.orange[50]),
-                ),
-                color: Colors.grey[200],
-                child: Text("Uygulamayı Paylaş"),
-                onPressed: () {
-                  Share.share(
-                      'Erciyses Üniversitesi duyurularını en hızlı ve en kolay şekilde takip et!\n' +
-                          'https://play.google.com/store/apps/details?id=com.project.anons');
-                },
               ),
             ],
           ),
         ),
       ),
+    );
+  }
+}
+
+class CustomRaisedButton extends StatelessWidget {
+  final String title;
+  final Function onPressed;
+
+  CustomRaisedButton({this.title, this.onPressed});
+
+  @override
+  Widget build(BuildContext context) {
+    return RaisedButton(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10.0),
+        side: BorderSide(color: Colors.orange[50]),
+      ),
+      color: Colors.grey[200],
+      child: Text(title),
+      onPressed: onPressed,
     );
   }
 }

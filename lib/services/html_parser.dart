@@ -3,6 +3,7 @@ import 'package:http/http.dart';
 import '../models/department.dart';
 import '../models/announcement.dart';
 import 'package:anons/services/networking.dart';
+import 'dart:convert' show utf8;
 import 'package:html/parser.dart' as parser;
 
 List<Department> _departments = List<Department>();
@@ -16,7 +17,9 @@ bool _isDepartmentExist(Department d) {
 
 class HtmlParsing {
   void parseDocument(Response response, Department department) {
-    Document document = parser.parse(response.body);
+    //I solved strange character prob. using this line.
+    String decoded = utf8.decode(response.bodyBytes);
+    Document document = parser.parse(decoded);
 
     List<Element> titles = document.querySelectorAll(department.titleSelector);
     List<Element> links = department.linkSelector == null
@@ -47,8 +50,10 @@ class HtmlParsing {
         link: "--",
         date: "--",
       );
+
       department.announcements.add(newAnnouncement);
     }
+
     //İlgili bölüme ait duyuru bulunmuşsa
     else {
       int boundary = department.listBoundary != null

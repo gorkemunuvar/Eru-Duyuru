@@ -65,6 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         backgroundColor: kAppBarColor,
         title: Text('Erciyes Üniversitesi'),
+        //Header
         actions: <Widget>[
           Builder(
             builder: (context) => Padding(
@@ -109,10 +110,6 @@ class _HomeScreenState extends State<HomeScreen> {
 }
 
 class FutureBuilderTabs extends StatefulWidget {
-  const FutureBuilderTabs({
-    Key key,
-  }) : super(key: key);
-
   @override
   _FutureBuilderTabsState createState() => _FutureBuilderTabsState();
 }

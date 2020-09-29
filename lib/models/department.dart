@@ -534,13 +534,6 @@ List<Department> _departments = [
     dateSelector: 'div.date',
   ),
   Department(
-    name: 'Sağlık Bilimleri Enstitüsü',
-    type: DepartmentTypes.EnstituSaglikBilimleri,
-    url: 'http://sagens.erciyes.edu.tr',
-    startingLink: '',
-    titleSelector: 'font > a',
-  ),
-  Department(
     name: 'Farabi Duyuruları',
     type: DepartmentTypes.Farabi,
     url:
@@ -634,7 +627,6 @@ enum DepartmentTypes {
   EnstituFenBilimleri,
   EnstituGevherNesibeGenomVeKokHucre,
   EnstituGuzelSanatlar,
-  EnstituSaglikBilimleri,
   EnstituSosyalBilimler,
   Obisis,
   Erasmus,

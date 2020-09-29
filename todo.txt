@@ -1,25 +1,36 @@
 *
-[OK] - Hata: Bir sayfayı anasayfaya birden fazla ekleyebiliyor.
+[OK] - (Hata) Bir sayfayı anasayfaya birden fazla ekleyebiliyor.
 [OK] - İnternete bağlı olmadan uygulamayı açınca kullanıcı dostu bir hata mesajı gösterilmeli.
 [OK] - Ayarlarda bir değişiklik yapınca anasayfaya direk yansımalı.
 [OK] - Ayarlara değişiklikleri kaydet butonu ekle.   
 [OK] - Ayarlarda yeni bir bölüm eklenir ya da çıkarılırsa işleme dair mesaj göster.
 [OK] - Hata görüntüle butonunu kaldır.
-[OK] - Hata: Hot Reload yapınca duyurular görünmeyebiliyor.
+[OK] - (Hata) Hot Reload yapınca duyurular görünmeyebiliyor.
 [OK] - Error görüntülerken ikonu 3-4 kat büyük ve daha şeffaf yap. Butona buton görünümü eklenmeli.
 [OK] - Rehber ekranına arama filteremesine dair bilgilendirme eklenmeli.
 [OK] - Bölüm sayfalarını taraycıda açabilmek için buton eklenmeli.
 [OK] - Tarayıcıda obisise ve webmaile yönlendiren bir kısayol eklenmeli.
 [OK] - WebView açılırken indicator gösterilebilir.
 
-*
 [OK] - WebView indirme hatası verebiliyor.
 [OK] - İletişim ekranına uygulamayı paylaş özelliği ekle.
 
-[--] - Uygulama ilk açıldığında mesaj gösterilebilir.
-[--] - Hata: WebView içeriği bazen tarayıcıdaki boyutunda görüntülemiyor.(Farabi)
-[--] - Duyuru kartlarına paylaşma ikonu eklenebilir.
-[--] - Rehbere scroll bar eklenebilir.
-[--] - Duyuru ve rehber paylaşırken kısa uygulama linki ekle.
+[OK] - Duyuru kartında yandaki ok işareti kaldırılabilir.
+[OK] - Duyuru sayfasında paylaşma ikonu floating action button olabilir.
+[OK] - Indicator duyuru açıldıktan sonra yok edileilir.
+[OK] - İletişim sayfasında doğrudan mail adresi ile ulaşabilme butonu eklenebilir.
+
+[OK] - (Hata) IIBF gibi bazı bölümlerin duyurularında hatalı karakterler görünüyor.
+[--] - (Hata) Örn. Eruzem gibi sayfalar anasayfaya eklendiğinde duyuruları göstermiyor.
+[--] - (Hata) Tablar arasında geçiş yapıldığında 10'dan fazla duyuru gösteriyor. 
+
+[--] - Uygulama ilk açıldığında nasıl kullanılacağına dair 3-4 ekran eklenebilir.
+[--] - Duyuru ve rehber paylaşırken kısa bir şekilde uygulama linki eklenebilir.
+[--] - Daha sonra aktif olacak şekilde yemekhane menüsü eklenebilir.
+[--] - Duyurular Provider paketi ile tutulabilir.
+[--] - Info Screen daha estetik olabilir.
+[--] - Playstore daki mockuplar düzenlenebilir.
+
 [--] - (Belki) Duyuru ekranı için pull-to-refresh ya da yenile özelliği eklenmeli.
 [--] - (Belki) Rehberde geri yapınca çıkmak yerine anasayfaya gönderebilir.
+[--] - (Belki) Rehbere scroll bar eklenebilir.

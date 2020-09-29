@@ -28,10 +28,9 @@ class AnnouncementListTile extends StatelessWidget {
           baseline: 35.0,
           baselineType: TextBaseline.alphabetic,
           child: Text(
-            '$date',
+            date,
           ),
         ),
-        trailing: Icon(Icons.keyboard_arrow_right),
         onTap: () {
           Navigator.push(
             context,
