@@ -88,7 +88,9 @@ class _WebViewScreenState extends State<WebViewScreen> {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Share.share("${widget.title}\n${widget.initialUrl}");
+          Share.share(
+            "${widget.title}\n${widget.initialUrl}\nvia tosto.re/eruduyuru",
+          );
         },
         child: Icon(Icons.share, size: 30.0),
         backgroundColor: Color(0xFFF9A81A),

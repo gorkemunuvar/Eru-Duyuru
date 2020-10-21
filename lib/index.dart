@@ -16,6 +16,7 @@ export 'components/home_tab_bar_component.dart';
 export 'components/departments_expansion_tile.dart';
 export 'components/future_builder_announcements.dart';
 
+export 'screens/menu_screen.dart';
 export 'screens/info_screen.dart';
 export 'screens/webview_screen.dart';
 export 'screens/contact_screen.dart';

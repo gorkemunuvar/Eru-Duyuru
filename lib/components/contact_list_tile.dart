@@ -43,7 +43,7 @@ class ContactListTile extends StatelessWidget {
               iconSize: 22.0,
               onPressed: () {
                 Share.share(
-                    '${person.name}\n${person.department}\n${person.email}\nDahili No: ${person.phone}');
+                    '${person.name}\n${person.department}\n${person.email}\nDahili No: ${person.phone}\nvia tosto.re/eruduyuru');
               },
             ),
             IconButton(

@@ -18,7 +18,7 @@ class FutureBuilderAnnouncements extends StatefulWidget {
 
 class _FutureBuilderAnnouncementsState
     extends State<FutureBuilderAnnouncements> {
-  List<Announcement> announcements = List<Announcement>();
+  List<Announcement> announcements = [];
 
   Future<List> getData() async {
     Department department = Department.getDepartmentInstance(

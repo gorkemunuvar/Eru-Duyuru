@@ -28,7 +28,14 @@ class BottomNavigationBarComponent extends StatelessWidget {
             Icons.link,
             size: 30.0,
           ),
-          title: Text('Hızlı Bağlantılar'),
+          title: Text('Bağlantılar'),
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(
+            Icons.fastfood,
+            size: 25.0,
+          ),
+          title: Text('Yemekhane'),
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.info_outline),

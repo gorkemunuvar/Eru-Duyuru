@@ -43,6 +43,7 @@ class Department {
   static DepartmentTypes getDepartmentType(String departmentName) {
     for (Department d in _departments)
       if (departmentName == d.name) return d.type;
+
     return null;
   }
 }
@@ -339,15 +340,15 @@ List<Department> _departments = [
     dateSelector2: 'li > span.img > span.ay',
     dateSelector3: 'li > span.img > span.yil',
   ),
-  Department(
+  /* Department(
     name: 'İletişim Fakültesi',
     type: DepartmentTypes.FakulteIletisim,
-    url: 'http://iletisim.erciyes.edu.tr/category/duyuru/',
+    url: 'https://iletisim.erciyes.edu.tr/category/duyuru/',
     startingLink: '',
-    titleSelector: 'div.post-info > h2 > a',
-    linkSelector: 'div.post-info > h2 > a',
-    dateSelector: 'div.post-info > p.postmetadata',
-  ),
+    titleSelector: 'h2.entry-title > a',
+    linkSelector: 'h2.entry-title > a',
+    dateSelector: 'h2.entry-title > a',
+  ), */
   Department(
     name: 'Mimarlık Fakültesi',
     type: DepartmentTypes.FakulteMimarlik,
@@ -524,7 +525,7 @@ List<Department> _departments = [
     dateSelector3: 'li > span.img > span.yil',
   ),
   Department(
-    name: 'Eğitim Bilimleri Ensitüsü',
+    name: 'Eğitim Bilimleri Enstitüsü',
     type: DepartmentTypes.EnstituEgitimBilimleri,
     url:
         'https://ebil.erciyes.edu.tr/dosya.asp?bolum=dosyalar&menu=1&dili=turkce&sayfabasi=DUYURU%20ve%20HABERLER',
@@ -570,7 +571,7 @@ List<Department> _departments = [
     dateSelector: 'div.DuyuruSatirlar > ul > li > i',
   ),
   Department(
-    name: 'Eruzem',
+    name: 'Erüzem Duyuruları',
     type: DepartmentTypes.Eruzem,
     url: 'http://eruzem.erciyes.edu.tr/tr/tum-duyurular',
     startingLink: 'http://eruzem.erciyes.edu.tr',

@@ -15,10 +15,13 @@ class AnnouncementsScreen extends StatefulWidget {
 class _AnnouncementsScreenState extends State<AnnouncementsScreen> {
   @override
   Widget build(BuildContext context) {
+    int length = widget.announcements.length;
+
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: ListView.builder(
-        itemCount: widget.announcements.length,
+        //Duyuru ekranında 10'dan fazla duyuru göstermemesi için
+        itemCount: length > 10 ? 10 : length,
         itemBuilder: (context, index) {
           return AnnouncementListTile(
             title: widget.announcements[index].title,

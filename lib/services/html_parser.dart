@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:html/dom.dart';
 import 'package:http/http.dart';
 import '../models/department.dart';
@@ -16,10 +18,34 @@ bool _isDepartmentExist(Department d) {
 }
 
 class HtmlParsing {
-  void parseDocument(Response response, Department department) {
+  static void iletisim() async {
+/*     url: 'http://mimarlik.erciyes.edu.tr',
+    startingLink: 'http://mimarlik.erciyes.edu.tr',
+     titleSelector: 'div.duyurugenislik2 > a', */
+
+    Networking networking = Networking(
+      'http://mimarlik.erciyes.edu.tr',
+    );
+
+    Response response = await networking.getData();
+
+    String decoded = utf8.decode(response.bodyBytes);
+    Document document = parser.parse(decoded);
+
+    List<Element> titles =
+        document.querySelectorAll('div.duyurugenislik2 > aR');
+
+    for (var title in titles) {
+      print(title.text);
+    }
+  }
+
+  List<Announcement> parseDocument(Response response, Department department) {
     //I solved strange character prob. using this line.
     String decoded = utf8.decode(response.bodyBytes);
     Document document = parser.parse(decoded);
+
+    List<Announcement> anons = [];
 
     List<Element> titles = document.querySelectorAll(department.titleSelector);
     List<Element> links = department.linkSelector == null
@@ -86,11 +112,14 @@ class HtmlParsing {
           date: department.dateSelector != null ? date : '---',
         );
 
+        anons.add(newAnnouncement);
         department.announcements.add(newAnnouncement);
       }
     }
 
     _departments.add(department);
+
+    return anons;
   }
 
   Future<List> getAnnouncements(Department department) async {
@@ -103,7 +132,6 @@ class HtmlParsing {
       }
     }
 
-    //return _departments;
     return department.announcements;
   }
 

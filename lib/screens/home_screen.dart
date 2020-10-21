@@ -12,8 +12,9 @@ Future<List> _readDepartmentsOnDevice() async {
 
   for (String departmentName in departmentNames) {
     _tabList.add(Tab(text: departmentName));
-    _contentList
-        .add(FutureBuilderAnnouncements(departmentName: departmentName));
+    _contentList.add(
+      FutureBuilderAnnouncements(departmentName: departmentName),
+    );
   }
 
   return departmentNames;
@@ -38,6 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
       DepartmentsListView(),
       ContactScreen(),
       ShortcutScreen(),
+      MenuScreen(),
       InfoScreen(),
     ];
   }

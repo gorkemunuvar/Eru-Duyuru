@@ -36,7 +36,8 @@ class HomeTabBarComponent extends StatelessWidget {
                       ? [
                           FutureBuilderAnnouncements(
                             departmentName: Department.getDepartmentName(
-                                DepartmentTypes.AnasayfaErciyesUniversitesi),
+                              DepartmentTypes.AnasayfaErciyesUniversitesi,
+                            ),
                           ),
                         ]
                       : contentList,

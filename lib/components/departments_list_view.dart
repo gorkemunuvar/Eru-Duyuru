@@ -355,7 +355,7 @@ class DepartmentsListView extends StatelessWidget {
                   );
                 },
               ),
-              ListTileCard(
+              /* ListTileCard(
                 title: "İletişim Fakültesi",
                 onTap: () {
                   _showAnnouncements(
@@ -365,7 +365,7 @@ class DepartmentsListView extends StatelessWidget {
                     ),
                   );
                 },
-              ),
+              ), */
               ListTileCard(
                 title: "Mimarlık Fakültesi",
                 onTap: () {

@@ -78,7 +78,7 @@ class DepartmentsList extends StatelessWidget {
                 title: "Mühendislik Fakültesi",
                 childrens: <Widget>[
                   SwitchListTileCard(
-                    title: "Mühendislilk Fakültesi Anasayfası",
+                    title: "Mühendislik Fakültesi Anasayfası",
                   ),
                   SwitchListTileCard(
                     title: "Bilgisayar Mühendisliği",
@@ -140,7 +140,7 @@ class DepartmentsList extends StatelessWidget {
                     title: "Temel Eğitim",
                   ),
                   SwitchListTileCard(
-                    title: "Türkçe Ve Sosyal Bilimler",
+                    title: "Türkçe ve Sosyal Bilimler",
                   ),
                   SwitchListTileCard(
                     title: "Yabancı Diller",
@@ -172,14 +172,14 @@ class DepartmentsList extends StatelessWidget {
                 title: "Hukuk Fakültesi",
               ),
               SwitchListTileCard(
-                title: "İktisadi Ve İdari Bilimler Fakültesi",
+                title: "İktisadi ve İdari Bilimler Fakültesi",
               ),
               SwitchListTileCard(
                 title: "İlahiyat Fakültesi",
               ),
-              SwitchListTileCard(
+              /* SwitchListTileCard(
                 title: "İletişim Fakültesi",
-              ),
+              ), */
               SwitchListTileCard(
                 title: "Mimarlık Fakültesi",
               ),

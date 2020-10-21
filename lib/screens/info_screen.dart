@@ -19,10 +19,6 @@ class InfoScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text(
-                "Görüş, eleştiri ve yorumlarınız için",
-                style: TextStyle(fontSize: 18.0),
-              ),
               SizedBox(
                 height: 10.0,
               ),

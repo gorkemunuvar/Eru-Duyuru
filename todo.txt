@@ -12,21 +12,25 @@
 [OK] - Tarayıcıda obisise ve webmaile yönlendiren bir kısayol eklenmeli.
 [OK] - WebView açılırken indicator gösterilebilir.
 
+*
 [OK] - WebView indirme hatası verebiliyor.
 [OK] - İletişim ekranına uygulamayı paylaş özelliği ekle.
 
+*
 [OK] - Duyuru kartında yandaki ok işareti kaldırılabilir.
 [OK] - Duyuru sayfasında paylaşma ikonu floating action button olabilir.
-[OK] - Indicator duyuru açıldıktan sonra yok edileilir.
+[OK] - Indicator duyuru açıldıktan sonra yok edilebilir.
 [OK] - İletişim sayfasında doğrudan mail adresi ile ulaşabilme butonu eklenebilir.
 
 [OK] - (Hata) IIBF gibi bazı bölümlerin duyurularında hatalı karakterler görünüyor.
-[--] - (Hata) Örn. Eruzem gibi sayfalar anasayfaya eklendiğinde duyuruları göstermiyor.
-[--] - (Hata) Tablar arasında geçiş yapıldığında 10'dan fazla duyuru gösteriyor. 
+[OK] - (Hata) Tablar arasında geçiş yapıldığında 10'dan fazla duyuru gösteriyor.
+[OK] - (Hata) Örn. Eruzem gibi sayfalar anasayfaya eklendiğinde duyuruları göstermiyor.
+[OK] - (Hata) İletişim Fakültesinde Handshake hatası veriyor. (App'den kaldırdım.)
+[OK] - Daha sonra aktif olacak şekilde yemekhane menüsü eklenebilir.
+[OK] - Duyuru ve rehber paylaşırken kısa bir şekilde uygulama linki eklenebilir.
 
+[--] - Duyuurlar Provider ile yönetilebilir.
 [--] - Uygulama ilk açıldığında nasıl kullanılacağına dair 3-4 ekran eklenebilir.
-[--] - Duyuru ve rehber paylaşırken kısa bir şekilde uygulama linki eklenebilir.
-[--] - Daha sonra aktif olacak şekilde yemekhane menüsü eklenebilir.
 [--] - Duyurular Provider paketi ile tutulabilir.
 [--] - Info Screen daha estetik olabilir.
 [--] - Playstore daki mockuplar düzenlenebilir.
