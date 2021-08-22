@@ -1,4 +1,5 @@
-Uygulama ile Erciyes Üniversitesindeki bölümlerinin ve web sitelerinin duyurularına, akademik kadro rehberine ve hızlı bağlantılara kolayca ulaşılabilir.
+r. The main purpose of the application is to make it easier for students to follow the announcements of their departments in Erciyes University. Application gets the
+announcements using web scraping techniques.
 
-Uygulama için Play Store Linki
+Playstore link
 https://play.google.com/store/apps/details?id=com.project.anons
